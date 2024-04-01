@@ -1,0 +1,40 @@
+body {
+	font-size: 24px
+}
+
+h1 {
+  font-size: 200%;
+  color: black; }
+
+h2 {
+  font-size: 150%;
+  border-bottom: 1px solid #cccccc;
+  color: black; }
+
+h3 {
+  font-size: 140%; }
+
+h4 {
+  font-size: 120%; }
+
+h5 {
+  font-size: 100%; }
+
+h6 {
+  color: #777777;
+  font-size: 14px; }
+
+pre {
+  font-size: 80%;
+}
+
+.nav > li > a {
+  font-size: 70%;
+}
+
+.container {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+

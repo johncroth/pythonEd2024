@@ -1,0 +1,1162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Python, Humberto Luna, 2024</title>
+    <link href="bootstrap.min.css" rel="stylesheet" />
+<link href="default.css" rel="stylesheet" />
+<link href="github.css" rel="stylesheet" />
+<link href="doc.css" rel="stylesheet" />
+<link href="python_course.css" rel="stylesheet" />
+    <style>.nav > li > .nav > li > .nav > li > .nav > li {display: none;}</style>
+    <script src="jquery.min.js" type="javascript"></script>
+<script src="bootstrap.min.js" type="javascript"></script>
+  </head>
+  <body id="page-top" class="html-doc">
+    <!-- Fixed navbar -->
+    <div class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand doc-title" href="#page-top">Python, Humberto Luna, 2024</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+          
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+    <div id="documentation-container" class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="nav-container">
+            <div class="nav-inner" id="scroll-spy" style="width: min-content; overflow: auto; top: 60px; bottom: 0; padding 10px 0 10px 0;">
+              <span class="toc">Table of contents</span>
+              <ol class="nav"><li class="active"><a href="#Benvenido">Benvenido</a></li><li><a href="#Basicas">Basicas</a></li><li><a href="#Imprimir">Imprimir</a></li><li><a href="#Repeticion">Repeticion</a></li><li><a href="#Dibujos">Dibujos</a></li><li><a href="#Repeticion-otra-vez">Repeticion otra vez</a></li><li><a href="#Caos">Caos</a></li><li><a href="#Nombres">Nombres</a></li><li><a href="#Memoria">Memoria</a></li><li><a href="#Entradas">Entradas</a></li><li><a href="#Tiempo">Tiempo</a></li><li><a href="#Orden">Orden</a></li><li><a href="#Si">Si</a></li></ol>
+              
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-md-9">
+<p class="page" id="Benvenido"></p><h1>Benvenido</h1>
+<h1 id="bienvenido-a-python">Bienvenido a Python</h1>
+<p>En esta clase aprenderemos las partes más básicas de la programación informática. Usaremos el lenguaje de programación Python,
+el cual es muy popular, ampliamente utilizado y típico de muchos lenguajes de programación.</p>
+<h2 id="pycharm">PyCharm</h2>
+<p>Usaremos una aplicación llamada PyCharm para escribir y ejecutar programas Python. 
+PyCharm es la herramienta más popular para escribir.
+programa en Python. Una de las razones por las que es popular es que nuestra versión es gratuita 
+para que cualquiera pueda usarla y seguirá siéndolo en el futuro, si deseas utilizarlo fuera de clase.</p>
+<p>PyCharm tiene una desventaja: puede distraerte porque hay muchas formas en las que intenta ayudarte. Intenta concentrarte
+sobre las operaciones básicas: crear archivos, escribir programas en esos archivos, ejecutar esos programas y leer el resultado.</p>
+<p>Debido a que compartirá su computadora con estudiantes de otras clases, es importante crear un &quot;Proyecto&quot; para almacenar
+todo tu trabajo. Cada clase comenzará abriendo su proyecto y terminará cerrando su proyecto.</p>
+<p>Necesitamos que cree este proyecto en una carpeta particular con un nombre particular, de la siguiente manera.</p>
+<h2 id="creando-tu-proyecto-pycharm">Creando tu proyecto PyCharm</h2>
+<ol>
+<li><p>Inicie la &quot;PyCharm Community Edition&quot;</p>
+<p> <img src="https://github.com/johncroth/pythonEd2024/assets/122372203/38cfe000-5224-4159-8470-6595598bbc53" /></p>
+</li>
+<li><p>Cierre todos los proyectos abiertos. Elija <code>File &gt; Close Project</code> en cualquier ventana abierta de PyCharm.</p>
+<p> <img src="https://github.com/johncroth/pythonEd2024/assets/122372203/a4386ab1-48dd-45d2-81b5-9c8bfcb89a1f" /></p>
+<p> Finalmente verá la ventana &quot;Welcome to PyCharm&quot; como esta:</p>
+<p> <img src="https://github.com/johncroth/pythonEd2024/assets/122372203/1cce9437-525c-47f9-afe4-59dd75240b8a" /></p>
+</li>
+<li><p>Haga clic en el botón <code>New Project</code>, que puedes encontrar en la imagen de arriba. La ventana cambiará a esta forma:</p>
+<p> <img src="https://github.com/johncroth/pythonEd2024/assets/122372203/652c8887-bd30-465c-afe8-9c73e3ac2f64" /></p>
+</li>
+<li><p>En el primer campo, cambie el <code>Name:</code> a <code>python2024</code> seguido de tu nombre y apellido, como en este ejemplo: <code>python2024JulioVelazco</code></p>
+</li>
+<li><p><em>Con cuidado</em> cambia la <code>Location</code>. Haga clic en la carpeta a la derecha de la línea para abrir un selector de archivos y seleccione <code>D:\HukiPython</code>. Esta carpeta ya debería existir; Pida ayuda si no es así.</p>
+<p> <img src="https://github.com/johncroth/pythonEd2024/assets/122372203/1a0608a4-523d-47d6-a0cc-1c75e41ebcd3" /></p>
+</li>
+<li><p>Asegúrate de haber seguido correctamente los dos pasos anteriores. Si los entiende mal, podría interrumpir 
+el trabajo de otros estudiantes. Cuando esté seguro, haga clic en el botón <code>Create</code> en la esquina inferior 
+derecha de la ventana.</p>
+</li>
+<li><p>PyCharm abrirá el nuevo proyecto y luego puede parecer lento u ocupado durante unos minutos. Finalmente llegarás a este punto:</p>
+<p> <img src="https://github.com/johncroth/pythonEd2024/assets/122372203/993faf88-0171-4473-8536-f390dc64ebe1" /></p>
+</li>
+</ol>
+<h2 id="listo">Listo</h2>
+<p>A continuación algunas tareas <a href="#Basicas">básicas</a>.</p>
+<p class="page" id="Basicas"></p><h1>Basicas</h1>
+<h1 id="abrir-su-proyecto-con-pycharm">Abrir su proyecto con PyCharm</h1>
+<p>Todos los días, al comienzo de la clase, deberás abrir tu Proyecto. Después de iniciar la aplicación PyCharm,
+Haz lo siguiente:</p>
+<ol>
+<li><p>Cierre cualquier ventana de proyecto abierta con <code>File &gt; Close Project</code></p>
+<p> Terminarás en le <code>Welcome to PyCharm</code> ventana.</p>
+</li>
+<li><p>Elija su proyecto de la lista de proyectos de PyCharm.</p>
+<p> <img src="https://github.com/johncroth/pythonEd2024/assets/122372203/f253c5b5-07fa-47ac-bbd7-0e7d837096b8" /></p>
+<p> Después de varios segundos, su proyecto estará listo para que pueda crear y editar archivos.</p>
+</li>
+</ol>
+<h1 id="crear-un-nuevo-archivo-python">Crear un nuevo archivo Python</h1>
+<p>Los programas Python viven en archivos. En cada lección de esta clase, necesitará crear varios archivos Python nuevos con
+ciertos nombres. Veamos cómo hacer esto.</p>
+<p><a href="https://github.com/johncroth/pythonEd2024/assets/122372203/42995031-041c-49fe-95b7-5418ebfd9b09">https://github.com/johncroth/pythonEd2024/assets/122372203/42995031-041c-49fe-95b7-5418ebfd9b09</a></p>
+<h1 id="eliminar-archivos">Eliminar archivos</h1>
+<p>Si comete un error, como elegir algo que no sea &quot;Python File&quot; de la lista, cancele el procedimiento si
+poder. En el peor de los casos, puedes eliminar el archivo. (¡Pero tenga cuidado de no eliminar los archivos incorrectos!)</p>
+<p>Haga clic derecho en el nombre del archivo en la lista de archivos del proyecto, luego seleccione &quot;Delete&quot; y haga 
+clic en &quot;Okay&quot; en la confirmación. cuadro que aparece.</p>
+<p><a href="https://github.com/johncroth/pythonEd2024/assets/122372203/37cfb58b-adcd-4418-b3f3-2272df452127">https://github.com/johncroth/pythonEd2024/assets/122372203/37cfb58b-adcd-4418-b3f3-2272df452127</a></p>
+<h1 id="recuperar-archivos">Recuperar archivos</h1>
+<p>Y si comete un error al eliminar un archivo y se da cuenta de inmediato, puede restaurar el archivo eligiendo
+<code>Edit &gt; Undo</code></p>
+<p><img src="https://github.com/johncroth/pythonEd2024/assets/122372203/ccb76eda-aff4-457b-8d35-8fb8eb3bf4bd" /></p>
+<h1 id="abrir-archivos">Abrir archivos</h1>
+<p>Para abrir un archivo en su proyecto, simplemente haga doble clic en el archivo en la lista de archivos 
+del proyecto. Esta lista se puede ocultar o se muestra haciendo clic en el área vertical &quot;Proyecto&quot; 
+a la izquierda de la ventana del proyecto, marcada con un círculo a continuación:</p>
+<p><img src="https://github.com/johncroth/pythonEd2024/assets/122372203/80ba625b-ec53-4e1c-abbe-176937f7253f" /></p>
+<h1 id="c-mo-ejecutar-programas">Cómo ejecutar programas</h1>
+<p>Hay algunas formas de ejecutar el programa en su archivo, pero la mayoría son propensas a errores. La mejor manera es hacer clic derecho en el editor y elija &quot;Run&quot; en el menú, aproximadamente a la mitad.</p>
+<p><a href="https://github.com/johncroth/pythonEd2024/assets/122372203/480c9854-7bb6-4824-8837-6a108d249c2a">https://github.com/johncroth/pythonEd2024/assets/122372203/480c9854-7bb6-4824-8837-6a108d249c2a</a></p>
+<h1 id="listo-">Listo!</h1>
+<p>Parecen muchos detalles, pero crearás y ejecutarás muchos archivos todos los días, y estas cosas se convertirán en
+automático.</p>
+<h1 id="ejercicios">Ejercicios</h1>
+<ol>
+<li><p>A. Crea un nuevo archivo Python llamado<code>ejemplo_1.py</code></p>
+<p>B. Copie el programa Python en el cuadro al portapapeles de Windows, haciendo clic en el botón en la esquina derecha.
+Luego pegue el código en el archivo: haga clic derecho en la ventana del editor en PyCharm y elija &quot;Paste&quot;.</p>
+<pre class="hljs"><span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;Hola y benvinido a PyCharm&quot;</span>)
+<span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;PyCharm puede hacer muchas cosas, pero&quot;</span>)
+<span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;es mejor enfocar en las cosas basicas.&quot;</span>)</pre><p>C. Ejecute el programa haciendo clic derecho y seleccionando &quot;Run&quot;. Lea las 3 líneas de salida.</p>
+<p>D. Eliminar el archivo <code>ejemplo_1.py</code></p>
+<p>E. Recupera el archivo y ejecútalo nuevamente.</p>
+</li>
+</ol>
+<p class="page" id="Imprimir"></p><h1>Imprimir</h1>
+<p>Comenzamos escribiendo y ejecutando este programa lo más simple posible. El punto aquí no es el programa, sino el proceso de crear y editar un archivo que contiene el código y luego ejecutar (o ejecutar) el código en ese archivo.</p>
+<p>El programa consta de una línea de código en un archivo llamado &quot;hola_mundo.py&quot;</p>
+<ul>
+<li>En tu editor, crea un nuevo archivo llamado <code>hola_mundo.py</code>.</li>
+<li>Copie y pegue la siguiente línea en el archivo:<pre class="hljs"><span class="hljs-function"><span class="hljs-title">print</span><span class="hljs-params">(<span class="hljs-string">&quot;Hola mundo&quot;</span>)</span></span></pre></li>
+<li>&quot;Ejecuta el programa. El mensaje &quot;Hola mundo&quot; se imprimirá en la &quot;consola&quot; en la parte inferior de la pantalla. (&quot;Print&quot; significa &quot;imprime&quot;, en inglés).</li>
+</ul>
+<p>Si esto sucede, ¡felicitaciones! Si esto no sucedió, o ve un mensaje de error o algo más, verifique su código una vez más. Pida ayuda si aún no está claro.</p>
+<p>Hay un par de cosas importantes que recordar.</p>
+<ul>
+<li>El nombre de un archivo Python debe terminar en <code>.py</code></li>
+<li>El nombre de un archivo Python debe comenzar con una letra minúscula y luego contener solo letras minúsculas, números y el símbolo de guión bajo <code>_</code>. Nada más.</li>
+<li>En este curso, te pedimos que utilices ciertos nombres de archivos en los ejemplos de los ejercicios. Por favor, hazlo para que podamos evaluar tu trabajo de forma rápida y correcta.</li>
+</ul>
+<hr>
+<blockquote>
+<p><img src="https://www.computer-history.info/Page4.dir/pages/Univac.dir/images/UNIVAC1.jpg" /></p>
+</blockquote>
+<blockquote>
+<p>La consola del UNIVAC-1 (&quot;Universal Automatic Computer&quot;) inventada en 1951. En 73 años no hemos aprendido a vivir sin una consola,
+aunque ya no necesitamos papel</p>
+</blockquote>
+<hr>
+<h1 id="el-doble-de-complicado">El doble de complicado</h1>
+<p>Escriba otra línea en<code>hola_mundo.py</code> debaja de la primera:</p>
+<pre class="hljs"><span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;adios&quot;</span>)</pre><p>Y ejecute el programa nuevamente. Ahora se imprimirán dos líneas en la consola.</p>
+<pre class="hljs"><span class="hljs-attribute">Hola mundo
+adios</span></pre><p>Entonces, puede ver que Python interpreta el archivo de arriba a abajo. Esto es bastante cierto por ahora, aunque la realidad es un poco más complicado.</p>
+<h1 id="errores">Errores</h1>
+<p>Cometerás un montón de errores al escribir programas. Incluso los programadores profesionales envían código para que su equipo lo revise con un promedio de un error por cada 10 líneas de código. Así que no te preocupes por cometer errores, no cuestan nada. Pero asegúrese de encontrarlos y corregirlos lo más rápido posible. Python te ayudará con esto.</p>
+<p>Agregue las siguientes 3 líneas a su programa <code>hola_mundo.py</code> en funcionamiento, para que <code>hola_mundo.py</code> se vea así:</p>
+<pre class="hljs"><span class="hljs-builtin-name">print</span>(<span class="hljs-string">&quot;Hola mundo&quot;</span>)
+<span class="hljs-builtin-name">print</span>(<span class="hljs-string">&quot;adios&quot;</span>)
+<span class="hljs-builtin-name">print</span> <span class="hljs-string">&quot;algo mas&quot;</span>
+<span class="hljs-builtin-name">print</span>
+<span class="hljs-builtin-name">print</span>(chau)</pre><p>Y ejecuta el programa. Verás:</p>
+<pre class="hljs">  File <span class="hljs-string">&quot;c:\users\johnc\mu_code\hola_mundo.py&quot;</span>, line 3
+    <span class="hljs-builtin-name">print</span> <span class="hljs-string">&quot;algo mas&quot;</span>
+          ^
+SyntaxError: Missing parentheses <span class="hljs-keyword">in</span> call <span class="hljs-keyword">to</span> <span class="hljs-string">&#x27;print&#x27;</span>. Did you mean <span class="hljs-builtin-name">print</span>(<span class="hljs-string">&quot;algo mas&quot;</span>)?</pre><p>Lamentablemente, el mensaje que describe el error está en inglés y no hay posibilidad de verlo en español, aunque
+tal vez pueda utilizar un traductor. Aun así, puedes obtener muy buenos consejos del mensaje.
+Primero, el problema estaba en la línea 3 del archivo <code>hola_mundo.py</code>, y en o cerca del punto indicado por la flecha <code>^</code>.
+En segundo lugar, puedes adivinar que &quot;paréntesis&quot; se refiere a &quot;paréntesis&quot;. Y, en tercer lugar, el mensaje de error en realidad sugiere una corrección.</p>
+<p>Aquí, el problema es que cuando se usa <code>print</code>, el mensaje a imprimir debe estar entre paréntesis. Python, como casi todas las computadoras.
+idiomas, necesita que usemos la puntuación con mucha precisión, tenemos que aprender y seguir sus reglas.</p>
+<p>Ahora, corrija la línea para que diga <code>print(&quot;algo mas&quot;)</code> y ejecute el programa nuevamente. Esta vez vemos:</p>
+<pre class="hljs">Hola mundo
+adios
+algo mas
+Traceback (most recent <span class="hljs-keyword">call</span> <span class="hljs-keyword">last</span>):
+  File <span class="hljs-string">&quot;c:\users\johnc\mu_code\hola_mundo.py&quot;</span>, <span class="hljs-built_in">line</span> <span class="hljs-number">5</span>, in <span class="hljs-symbol">&lt;module&gt;</span>
+    <span class="hljs-keyword">print</span>(chau)
+NameError: name <span class="hljs-string">&#x27;chau&#x27;</span> <span class="hljs-keyword">is</span> not defined</pre><p>Parece que se imprimieron los dos primeros mensajes, pero luego hubo un problema en la línea 4. El mensaje dice, en inglés, que el nombre <code>chau</code> no estaba definido. ¿Qué significa eso? El problema real es un poco más difícil de ver aquí, pero es que no pusimos nuestro mensaje &quot;chau&quot; entre comillas. Como resultado, Python intentó interpretarlo de una manera diferente: como un nombre para otra cosa, que veremos
+entender pronto... y fracasó.</p>
+<p>La corrección es sencilla: poner entre comillas el mensaje. Ejecútelo nuevamente y debería obtener el siguiente resultado:</p>
+<pre class="hljs"><span class="hljs-attribute">Hola mundo
+adios
+algo mas
+chau</span></pre><p>¡Perfecto! Excepto... ¿qué hace la tercera línea (&quot;imprimir&quot; por sí sola)? Parece que no se ejecutó o no hizo nada y Python no se quejó. Bueno, Python nunca encontrará todos tus problemas, y nada más tampoco lo hará. Este es un código realmente &quot;correcto&quot; en lo que respecta a Python.
+preocupados, tal vez no sea lo que pretendíamos. Lo que quería es imprimir una línea en blanco entre &quot;algo más&quot; y &quot;adios&quot;. Cambie la línea de <code>print</code> a <code>print()</code> y ejecútela nuevamente y verá la línea en blanco.</p>
+<p>Este proceso: escribir un par de líneas de código, ejecutar el programa, buscar mensajes de error, 
+hacer correcciones y ejecutar el programa nuevamente,
+es el proceso básico de escribir un programa. Le aconsejo que ejecute su programa después de escribir cada línea, y al menos ejecutarlo
+después de escribir cada tres líneas. Es un hábito al que hay que acostumbrarse, pero que mantendrá tu trabajo en una base sólida.</p>
+<h1 id="ejercicios">Ejercicios</h1>
+<ol>
+<li><p>Guarde una copia de <code>hola_mundo.py</code> en <code>prim_1.py</code>. En <code>prim_1.py</code>, agregue una linea mas al programa que consta de</p>
+<pre class="hljs"> <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;Benvenidos!&quot;</span>)</pre><p> Ejecute el programa nuevamente y asegúrese de ver el cambio.</p>
+</li>
+<li><p> A. Cree un nuevo archivo llamado <code>prim_2.py</code> que imprima el mensaje &quot;Este programa fue escrito por Juan Rojo&quot;, excepto
+con tu nombre en lugar de &quot;Juan Rojo&quot;. Guarde el programa y ejecútelo, comprobando que el resultado sea correcto.</p>
+<p> B. Agregue líneas adicionales con declaraciones <code>print</code> a <code>prim_2.py</code> para que imprima esta misma línea 4 veces.</p>
+<p> C. Cambie el programa para imprimir la línea &quot;Juan Rojo escribio este programa&quot; 4 veces, pero con tu nombre en lugar
+de &quot;Juan Rojo.&quot;</p>
+</li>
+<li><p>Ejecute el programa en <code>prim_1.py</code> nuevamente. (El objetivo de este ejercicio es asegurarse de que está ejecutando el programa que cree que está ejecutando.) Y despues, ejecute <code>prim_2.py</code> una vez mas.</p>
+</li>
+<li><p>Cree un nuevo archivo <code>prim_4.py</code>, copie y pegue el código siguiente, guarde y ejecute el programa. 
+¿Qué mensajes de error aparecen? Corrija los errores uno por uno, ejecutando el programa nuevamente cada vez.</p>
+<pre class="hljs"> <span class="hljs-built_in">print</span>( <span class="hljs-string">&quot;Y ahora, las noticias. )
+ (print &quot;</span>El presidente dijo que todo está bien.<span class="hljs-string">&quot;
+ print &quot;</span>El partido de oposición no estuvo de acuerdo.<span class="hljs-string">&quot;)</span></pre></li>
+</ol>
+<p class="page" id="Repeticion"></p><h1>Repeticion</h1>
+<p>Las computadoras destacan por hacer exactamente lo mismo una y otra vez, y no es difícil
+para hacer esto en Python.</p>
+<p>Copie el siguiente programa en un nuevo archivo <code>repeticion_a.py</code> y ejecútelo.</p>
+<pre class="hljs"><span class="hljs-built_in">print</span>( <span class="hljs-string">&quot;Hola mundo&quot;</span>)
+<span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(<span class="hljs-number">0</span>,<span class="hljs-number">5</span>):
+    <span class="hljs-built_in">print</span>( <span class="hljs-string">&quot;Hola otra vez&quot;</span> )
+<span class="hljs-built_in">print</span>( <span class="hljs-string">&quot;Basta&quot;</span> )</pre><p>Deberías ver lo siguiente en la &quot;consola:&quot;</p>
+<pre class="hljs"><span class="hljs-attribute">Hola mundo
+Hola otra vez
+Hola otra vez
+Hola otra vez
+Hola otra vez
+Hola otra vez
+Basta</span></pre><p>¿Que esta pasando aqui? La línea <code>for i in range(0,5):</code> dice que se ejecute la línea debajo de ella 5 veces antes de continuar con el resto del programa.</p>
+<ul>
+<li>Puedes leer la expresión <code>para i en el rango(0,5)</code> como &quot;para cada valor o i en el rango de 0 a 5&quot;.</li>
+<li>Esta construcción a menudo se denomina &quot;bucle&quot;, porque el programa regresa a la declaración &quot;for&quot;.</li>
+<li>Por supuesto, elegí &quot;5&quot; como ejemplo. Podríamos hacer algo 3 veces con <code>for i in range(0,3):</code> o 700 veces con
+<code>para i en el rango(0,700):</code></li>
+</ul>
+<p>Ahora, intente agregar una línea al programa anterior, para que se vea exactamente así:</p>
+<pre class="hljs"><span class="hljs-built_in">print</span>( <span class="hljs-string">&quot;Hola mundo&quot;</span>)
+<span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(<span class="hljs-number">0</span>,<span class="hljs-number">5</span>):
+    <span class="hljs-built_in">print</span>( <span class="hljs-string">&quot;Hola otra vez&quot;</span> )
+    <span class="hljs-built_in">print</span>( <span class="hljs-string">&quot;Salud&quot;</span> )
+<span class="hljs-built_in">print</span>( <span class="hljs-string">&quot;Basta&quot;</span> )</pre><p>La salida ahora será:</p>
+<pre class="hljs"><span class="hljs-attribute">Hola mundo
+Hola otra vez
+Salud
+Hola otra vez
+Salud
+Hola otra vez
+Salud
+Hola otra vez
+Salud
+Hola otra vez
+Salud
+Basta</span></pre><p>La clave aquí es el nivel de sangría. Debido a que las dos líneas debajo de la línea <code>for i in range(0,5):</code> tienen la misma sangría,
+Python incluye ambos en cada iteración del ciclo. Por otro lado, debido a que la línea <code>print(&quot;basta&quot;)</code> no tiene sangría, marca el
+final del &quot;bucle&quot;, es decir, la parte del programa que debe repetirse.</p>
+<p>Podríamos agregar más líneas dentro del bucle. Están dentro del bucle si están en el bloque de código sangrado debajo de la línea &quot;for&quot;.
+Decimos que la sangría define un <em>bloque de código.</em></p>
+<p>Explicaré un poco más sobre este programa en la próxima lección, pero es hora de hacer un par de ejercicios básicos.
+primero.</p>
+<h1 id="ejercicios">Ejercicios</h1>
+<ol>
+<li><p>Escribe un programa en el archivo <code>repeticion_1.py</code> que imprima tu nombre 25 veces y tenga solo 2 líneas.</p>
+</li>
+<li><p>El siguiente programa tiene 4 errores. Utilice Copiar/Pegar para guardarlo en <code>repeticion_2.py</code> exactamente en esta forma. 
+Luego ejecútelo y corrija los problemas. uno por uno hasta que produzca un resultado razonable. Observe los mensajes de error 
+y cuál fue el problema real. Si estás confundido, compáralo con uno de los programas de trabajo anteriores.</p>
+<pre class="hljs"> <span class="hljs-built_in">print</span> <span class="hljs-string">&quot;Empezando&quot;</span>
+ <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> rango(<span class="hljs-number">0</span>,<span class="hljs-number">7</span>)
+     <span class="hljs-built_in">print</span>( <span class="hljs-string">&quot;Que tal?&quot;</span> )
+    <span class="hljs-built_in">print</span>( <span class="hljs-string">&quot;Hola&quot;</span> )
+ <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;Terminando&quot;</span>)</pre></li>
+<li><p>A. Guarde el programa a continuación en <code>repeticion_3.py</code> y ejecútelo. Tiene exactamente un error para que lo corrijas, aunque
+Hay un par de cosas un poco desconocidas que no son errores.</p>
+<pre class="hljs"> <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(<span class="hljs-number">4</span>,<span class="hljs-number">8</span>)
+     <span class="hljs-built_in">print</span>( <span class="hljs-string">&quot;Vez: &quot;</span> )
+     <span class="hljs-built_in">print</span>( i )</pre><p>B. La línea <code>print(i)</code> no es un error, aunque no lo he explicado. Según el resultado del programa, descríbalo en pocas palabras,
+usted mismo lo que significa &quot;i&quot; y lo que muestra la línea &quot;print(i)&quot;.</p>
+<p>C. Cambie el programa para que imprima valores entre 2 y 8 en lugar de entre 4 y 7 como lo hace en la parte A.</p>
+</li>
+</ol>
+<hr>
+<blockquote>
+<p>Eliminar copias no es tomar atajos (&quot;to cut corners&quot;)</p>
+</blockquote>
+<blockquote>
+<p><img src="https://education.launchcode.org/lchs/_images/loop-comic.png" /></p>
+</blockquote>
+<hr>
+<p class="page" id="Dibujos"></p><h1>Dibujos</h1>
+<p>En la primera lección, usamos <code>print(&quot;Hola mundo&quot;)</code> para escribir un mensaje en la &quot;consola&quot;, la ventana en la parte inferior de nuestro editor. Llamamos a <code>print</code> una &quot;función&quot; o un &quot;operador&quot;. En esta lección, presentamos algunos &quot;funciónes&quot; más que hacen dibujos. Vamos a controlar un &quot;tortuga&quot; imaginaria que puede gire y se mueva, dibujando una línea a medida que avanza. </p>
+<p>Aquí hay un pequeño programa que dibuja dos segmentos de línea en ángulo recto. Cree un nuevo archivo &quot;dibujos_a.py&quot;, use &quot;copiar&quot; y &quot;pegar&quot; para colocar el programa anterior en el archivo, guardarlo y ejecutarlo. Presione enter cuando desee que se detenga el programa.</p>
+<pre class="hljs"><span class="hljs-keyword">from</span> turtle <span class="hljs-keyword">import</span> *
+
+forward(<span class="hljs-number">80</span>)
+right(<span class="hljs-number">90</span>)
+forward(<span class="hljs-number">80</span>)
+<span class="hljs-built_in">input</span>(<span class="hljs-string">&quot;Enter para continuar&quot;</span>)</pre><p>Quizás te resulte un poco difícil leer el programa al principio si no sabes inglés, así que vamos a explicarlo todo.</p>
+<ul>
+<li><code>forward</code> significa &quot;adelante&quot; unos puntos.</li>
+<li><code>right</code> significa &quot;(gire al la) derecha unos grados.</li>
+<li>Aprenderemos sobre <code>input</code> (&quot;entrada&quot;) más adelante; aquí es necesario evitar que la ventana desaparezca.
+Entonces el programa abre una ventana, dibuja una flecha (que es &quot;la tortuga&quot;) avanza 80 unidades, gira 90 grados y avanza otras 80 unidades. 
+Tambien, podemos ver el proceso, y la ultima direccion de la tortuga.</li>
+</ul>
+<p>Muy a menudo, necesitaremos decirle a Python que use un &quot;paquete&quot; de código adicional. Esta es la función de la primera línea:</p>
+<pre class="hljs"><span class="hljs-keyword">from</span> turtle <span class="hljs-keyword">import</span> *
+`</pre><p>que significa usar la paqeta de codigo se llama <code>turtle</code> (&quot;torguga.&quot;) Sin esta lina, las funciones <code>forward</code> &quot;adelante&quot; y <code>right</code> &quot;derecha&quot; no tienen significado para Python.</p>
+<p>Podemos hacer cualquier combinación de giros y movimientos hacia adelante. Terminemos de dibujar un cuadrado agregando algunos pasos más. Inserte las líneas siguientes en el programa, todas encima de la línea con &quot;entrada&quot;.</p>
+<pre class="hljs"><span class="hljs-function"><span class="hljs-title">right</span><span class="hljs-params">(<span class="hljs-number">90</span>)</span></span>
+<span class="hljs-function"><span class="hljs-title">forward</span><span class="hljs-params">(<span class="hljs-number">80</span>)</span></span>
+<span class="hljs-function"><span class="hljs-title">right</span><span class="hljs-params">(<span class="hljs-number">90</span>)</span></span>
+<span class="hljs-function"><span class="hljs-title">forward</span><span class="hljs-params">(<span class="hljs-number">80</span>)</span></span>
+<span class="hljs-function"><span class="hljs-title">right</span><span class="hljs-params">(<span class="hljs-number">90</span>)</span></span>
+<span class="hljs-function"><span class="hljs-title">forward</span><span class="hljs-params">(<span class="hljs-number">80</span>)</span></span>
+<span class="hljs-function"><span class="hljs-title">right</span><span class="hljs-params">(<span class="hljs-number">90</span>)</span></span></pre><p>Guarde y ejecute el programa nuevamente. Deberías ver el puntero moverse y girar mientras dibuja un cuadrado.</p>
+<h2 id="ejercicios">Ejercicios</h2>
+<ol>
+<li><p>En &quot;dibujos_1.py&quot;, escribe un programa que dibuje un octágono. Avanzará 80 puntos, luego girará a la derecha 45 grados con <code>right(45)</code> en vez de <code>right(90)</code>, y luego repetirá esto 8 veces.</p>
+</li>
+<li><p>En &quot;dibujos_2.py&quot;, copia el programa que dibuja un cuadrado. Luego cámbielo el programa para dibujar un rectángulo donde
+la parte superior e inferior son 3 veces más largas que los lados.</p>
+</li>
+<li><p>La &quot;tortuga&quot; incluye funciones <code>penup()</code> y <code>pendown()</code> (&quot;levanta la pluma&quot; y &quot;baja la pluma&quot;) hacen que la tortuga deje de dibujar (por lo que solo cambian las posiciones) y reanude el dibujo.</p>
+<p> A. En <code>dibujos_3.py</code> use estas funciones para dibujar dos segmentos de línea horizontales de longitud 40 con un espacio de 10 unidades entre ellos.</p>
+<p> B. Amplíe este programa para dibujar un solo segmento de línea horizontal de longitud 90 que es 10 puntos directemente debajo de los dos segmentos de línea.</p>
+<p> C. Amplíe  este program para dibjar un otro segmento de linea horizontal de longitud 90 y 10 puntos debajo el anterior.</p>
+</li>
+<li><p>Escribe un programa <code>dibujos_4.py</code> que dibuje un cuadrado de 40 por 40, y luego un segundo cuadrado del mismo tamaño 10 unidades a la derecha de el primer cuadrado. Recuerda que puedes usar <code>penup()</code> y <code>pendown()</code>. </p>
+</li>
+<li><p>Escribe un programa <code>dibujos_5.py</code> que dibuje un cuadrado de 40 por 40, y luego un segundo cuadrado del mismo tamaño 10 unidades abajo el otro.</p>
+</li>
+<li><p>En <code>dibujos_6.py</code>, guarde y ejecute el siguiente código. </p>
+<pre class="hljs"> <span class="hljs-keyword">from</span> turtle <span class="hljs-keyword">import</span> *
+ left(<span class="hljs-number">90</span>)
+ forward(<span class="hljs-number">80</span>)
+ left(<span class="hljs-number">90</span>)
+ forward(<span class="hljs-number">80</span>)
+ left(<span class="hljs-number">90</span>)
+ forward(<span class="hljs-number">80</span>)
+ left(<span class="hljs-number">90</span>)
+ forward(<span class="hljs-number">80</span>)</pre><p> Deberías ver a la tortuga dibujar un cuadrado. ¿Cuál es la diferencia con el programa anterior? ¿Qué significa la palabra <code>left</code>
+de ingles en español?</p>
+</li>
+</ol>
+<hr>
+<blockquote>
+<p><img src="https://www.nightfallcrew.com/wp-content/uploads/2014/08/IMG_2154.jpg?81e99d" /></p>
+</blockquote>
+<blockquote>
+<p>Los impresionantes gráficos del Commodore PET, c. 1978. (Yo nunca estuve impresionado.) Como era normal en aquella época, la grabadora de casetes funcionaba (no muy bien) como una unidad USB. No había disco duro.</p>
+</blockquote>
+<p class="page" id="Repeticion-otra-vez"></p><h1>Repeticion otra vez</h1>
+<p>Hay unas cosas más que discutir con la línea <code>for i in range(0,5):</code>.</p>
+<h2 id="la-variable-del-bucle">La variable del bucle</h2>
+<p>La <code>i</code> en <code>for i in range(0,5):</code> se llama <em>variable del bucle.</em> Ya exploraste esto un poco en los ejercicios. Python almacena el valor actual en el <code>rango</code> en esta <em>variable.</em> La primera vez que el programa ingresa al ciclo, la computadora almacena el primer valor en el <code>rango(0,5)</code> (que es <code>0</code>) en un lugar en la &quot;memoria&quot; de la computadora: el nombre <code>i</code> se refiere a ese lugar. La próxima vez que realiza el ciclo, Python coloca el segundo valor en el &quot;rango&quot; (que es &quot;1&quot;) en el mismo lugar, por lo que el lugar al que apunta &quot;i&quot; ahora contiene ese valor. (Un poco más informalmente, decimos cosas como &quot;Establecemos el valor de <code>i</code> en 1&quot;.) Y así sucesivamente para los otros pasos a través del bucle.</p>
+<p>Este es sólo nuestro primer encuentro con una <em>variable</em> y pronto las usaremos de otras maneras. La función <code>imprimir</code> puede mostrarnos los valores de una variable, así como los mensajes entrecomillados que usamos anteriormente. Guarde el siguiente programa en <code>otra_vez_a.py</code>, ejecútelo y observe el resultado:</p>
+<pre class="hljs"><span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(<span class="hljs-number">0</span>,<span class="hljs-number">5</span>):
+    <span class="hljs-built_in">print</span>( <span class="hljs-string">&quot;Vez numero: &quot;</span> )
+    <span class="hljs-built_in">print</span>( i ) </pre><p>Podemos arreglar esto un poco. La función <code>print</code> puede tomar tanto mensajes como variables y combinarlos en la misma línea, siempre y cuando separemos las partes con comas, así:</p>
+<pre class="hljs"><span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(<span class="hljs-number">0</span>,<span class="hljs-number">5</span>):
+    <span class="hljs-built_in">print</span>( <span class="hljs-string">&quot;Vez numero&quot;</span>, i, <span class="hljs-string">&quot;en proceso&quot;</span> )</pre><p>Cambie <code>otra_vez_a.py</code> a este formulario (prestando mucha atención a la puntuación) y ejecútelo nuevamente, corrigiendo cualquier error. Verás:</p>
+<pre class="hljs"><span class="hljs-attribute">Vez</span> numero <span class="hljs-number">0</span> en processo
+<span class="hljs-attribute">Vez</span> numero <span class="hljs-number">1</span> en processo
+<span class="hljs-attribute">Vez</span> numero <span class="hljs-number">2</span> en processo
+<span class="hljs-attribute">Vez</span> numero <span class="hljs-number">3</span> en processo
+<span class="hljs-attribute">Vez</span> numero <span class="hljs-number">4</span> en processo</pre><h2 id="el-nombre-de-la-variable-son-tu-elecci-n-">El nombre de la variable son tu elección.</h2>
+<p>¿Por qué la letra <code>i</code> en <code>for i in range(0,5):</code> y no alguna otra letra? Bueno, no hay nada especial en la letra &quot;i&quot; excepto que es la que yo elegí. Lo siguiente funciona exactamente igual:</p>
+<pre class="hljs"><span class="hljs-keyword">for</span> j <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(<span class="hljs-number">0</span>,<span class="hljs-number">5</span>):
+    <span class="hljs-built_in">print</span>( <span class="hljs-string">&quot;Vez numero&quot;</span>, j, <span class="hljs-string">&quot;en proceso&quot;</span> )</pre><p>Y también lo mismo:</p>
+<pre class="hljs"><span class="hljs-keyword">for</span> numero_de_iteracion <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(<span class="hljs-number">0</span>,<span class="hljs-number">5</span>):
+    <span class="hljs-built_in">print</span>( <span class="hljs-string">&quot;Vez numero&quot;</span>, numero_de_iteracion, <span class="hljs-string">&quot;en proceso&quot;</span> )</pre><p>Le damos a la &quot;variable del bucle&quot; su nombre en la construcción <code>for... in</code>, y luego ese es el nombre que debemos usar dentro
+el lazo. Es muy normal usar <code>i</code> o <code>j</code> o <code>k</code> como nombre de la variable del bucle, pero se puede elegir cualquier letra o combinación de letras (incluido el guión bajo <code>_</code>), pero no otros signos de puntuación ni espacios. . El nombre depende de ti... pero luego debes ceñirte a tu elección.</p>
+<h2 id="rangos-diferentes">Rangos diferentes</h2>
+<p>Como ha visto en un ejercicio anterior, el &quot;rango&quot; puede estar entre dos números enteros cualesquiera, y la variable del bucle asumirá el
+valores respectivos. Los valores comienzan con el primer valor dado a &quot;rango&quot; y continúan hasta el último, pero sin incluirlo.
+valor.</p>
+<h1 id="ejercicios-">Ejercicios:</h1>
+<ol>
+<li><p>Guarde el programa a continuación como <code>otra_vez_1.py</code> exactamente como se muestra. Ejecuta el programa. Corrija los 4 errores uno por uno, volviendo a ejecutar el programa después de cada corrección.</p>
+<pre class="hljs"> <span class="hljs-keyword">for</span> num_concursante <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(<span class="hljs-number">1</span>,<span class="hljs-number">4</span>):
+     <span class="hljs-built_in">print</span>( <span class="hljs-string">&quot;Hola concursante numero&quot;</span>, num_concursante )
+         <span class="hljs-built_in">print</span>( <span class="hljs-string">&quot;Como se llama?&quot;</span> )
+
+  <span class="hljs-built_in">print</span>( <span class="hljs-string">&quot;Bienvenidos a todos nuestros concursantes&quot;</span> )</pre></li>
+<li><p>A. Copie el programa completo anterior como <code>otra_vez_2.py</code> y el mensaje de &quot;Hola concursante numero X&quot; a &quot;Jugador X, benvenido(a)&quot;. (Por supuesto, uso &quot;X&quot; para representar el número del jugador.</p>
+<p>B. Cambie el nombre de la variable del bucle de <code>num_concursante</code> a <code>persona</code>. ¡Asegúrese de que el programa se ejecute como antes!</p>
+</li>
+<li><p>Guarde y ejecute el siguiente programa en <code>otra_vez_3.py</code></p>
+<pre class="hljs"> <span class="hljs-keyword">for</span> num <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(<span class="hljs-number">6</span>, <span class="hljs-number">11</span>):
+     <span class="hljs-built_in">print</span>( <span class="hljs-string">&quot;Ahora el valor de la variable del bucle es&quot;</span>, num )</pre><p> Ahora ejecútelo, y entonces reemplazando el rango con los siguientes rangos uno por uno. Cada vez, lea el resultado e interprete lo que ve.</p>
+<p> A. <code>range(113, 119)</code></p>
+<p> B. <code>range(1000001, 1000005)</code></p>
+<p> C. <code>range(-5, 2)</code></p>
+<p> D. <code>range(15, 5)</code></p>
+</li>
+<li><p>Copie y pegue el siguiente programa <code>otra_vez_4.py</code> y ejecútelo para ver cómo dibuja un hexágono.</p>
+<pre class="hljs"> <span class="hljs-keyword">from</span> turtle <span class="hljs-keyword">import</span> *
+
+ forward(<span class="hljs-number">100</span>)
+ right(<span class="hljs-number">60</span>)
+ forward(<span class="hljs-number">100</span>)
+ right(<span class="hljs-number">60</span>)
+ forward(<span class="hljs-number">100</span>)
+ right(<span class="hljs-number">60</span>)
+ forward(<span class="hljs-number">100</span>)
+ right(<span class="hljs-number">60</span>)
+ forward(<span class="hljs-number">100</span>)
+ right(<span class="hljs-number">60</span>)
+ forward(<span class="hljs-number">100</span>)
+ right(<span class="hljs-number">60</span>)</pre><p> A. Ahora, observe que esto consta de los mismos dos comandos repetidos 6 veces. 
+ Vuelva a escribir este programa usando un bucle con <code>for i in range(0,6):</code>.</p>
+<p> B. Una vez que tengas eso funcionando, cambia el rango de 0 a 8 y el ángulo de giro a 135. ¿Qué dibuja ahora?</p>
+</li>
+<li><p>Podemos poner un bucle dentro de otro bucle, si queremos. Pero, es importante dar nombres distintos a las variables de los bucles. Guarde el programa a continuación en <code>otra_vez_5.py</code> y ejecútelo. (Observe que nuestro bloque de código aquí incluye otro bucle con su propio bloque de código. No hay problema; en este caso los llamamos bucles externo e interno.)</p>
+<pre class="hljs"> <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>( <span class="hljs-number">10</span>, <span class="hljs-number">15</span> ):
+    <span class="hljs-built_in">print</span>( <span class="hljs-string">&quot;El valor exterior es&quot;</span>, i )
+    <span class="hljs-keyword">for</span> j <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>( <span class="hljs-number">0</span>, <span class="hljs-number">3</span> ):
+        <span class="hljs-built_in">print</span>( <span class="hljs-string">&quot;    El valor exterior es&quot;</span>, i, <span class="hljs-string">&quot;y el interior es&quot;</span>, j)</pre><p> A. Este programa imprime dos tipos de líneas, una más corta que la otra. ¿Cuántas líneas de cada tipo imprime el programa?</p>
+<p> B. ¿Qué sucede si cambia el nombre de la variable del bucle en el bucle interno de <code>j</code> a <code>i</code>, en conflicto con el bucle externo? (Recuerde, debe reemplazar <code>j</code> con <code>i</code> en dos lugares). ¿Se ejecuta el programa? ¿Produce la misma cantidad de mensajes de cada tipo? ¿La salida es la misma?</p>
+<p> C. Describa la desventaja de usar <code>i</code> en ambos bucles.</p>
+</li>
+</ol>
+<hr>
+<hr>
+<p>Menos mal no estamos aprendiendo COBOL.</p>
+<pre class="hljs">IDENTIFICATION DIVISION.
+PROGRAM-ID. HELLO.
+
+DATA DIVISION.
+   WORKING-<span class="hljs-keyword">STORAGE</span> SECTION.
+   <span class="hljs-number">01</span> WS-CNT PIC <span class="hljs-number">9</span>(<span class="hljs-number">1</span>) <span class="hljs-keyword">VALUE</span> <span class="hljs-number">0.</span> 
+
+<span class="hljs-keyword">PROCEDURE</span> DIVISION.
+   A-PARA.
+   <span class="hljs-keyword">PERFORM</span> B-PARA <span class="hljs-keyword">WITH</span> TEST <span class="hljs-keyword">AFTER</span> <span class="hljs-keyword">UNTIL</span> WS-CNT&gt;<span class="hljs-number">3.</span>
+   STOP RUN.
+
+   B-PARA.
+   DISPLAY <span class="hljs-string">&#x27;WS-CNT : &#x27;</span>WS-CNT.
+   <span class="hljs-keyword">ADD</span> <span class="hljs-number">1</span> <span class="hljs-keyword">TO</span> WS-CNT.</pre><pre class="hljs"><span class="hljs-regexp">//</span>SAMPLE JOB(TESTJCL,XXXXXX),CLASS = A,MSGCLASS = C
+<span class="hljs-regexp">//</span>STEP1 EXEC PGM = HELLO</pre><pre class="hljs">WS-CNT : 0
+WS-CNT : 1
+WS-CNT : 2
+WS-CNT : 3</pre><p class="page" id="Caos"></p><h1>Caos</h1>
+<p>Python incluye un paquete se llama <code>random</code> que genera números aleatorios. </p>
+<p>Guarde este programa en <code>caos_a.py</code> y ejecútelo 10 veces. Cada vez debería imprimir un número diferente.</p>
+<pre class="hljs"><span class="hljs-keyword">from</span> random <span class="hljs-keyword">import</span> *
+
+<span class="hljs-built_in">print</span>(randint(<span class="hljs-number">0</span>, <span class="hljs-number">100</span>))</pre><p>En particular, <code>randint(a,b)</code> (&quot;random integer&quot; es &quot;entero aleatorio&quot;) devuelve un entero entre a y b (inculuye a y b). </p>
+<p>Igualmente, <code>random()</code> devuelve un número decimal entre 0 y 1. Guarde el programa a continuación en <code>caos_b.py</code> y ejecútelo para ver 7 números decimales aleatorios.</p>
+<pre class="hljs"><span class="hljs-keyword">from</span> random <span class="hljs-keyword">import</span> *
+
+<span class="hljs-keyword">or</span> i <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(<span class="hljs-number">0</span>,<span class="hljs-number">7</span>):
+    <span class="hljs-built_in">print</span>(random())</pre><p>Recuerde: para usar <code>random</code> y <code>randomint</code> necesita importar el paquete <code>random</code> con <code>from</code> al inicio de su programa.</p>
+<h1 id="ejercicios">Ejercicios</h1>
+<ol>
+<li><p>En el archivo <code>caos_1.py</code>:</p>
+<p>  A. Escriba un programa que imprima 6 números enteros aleatorios entre 0 y 30</p>
+<p>  B. Cambie el programa para imprimir 6 números enteros aleatorios entre 10 y 30</p>
+<p>  C. Cambie el programa para imprimir 6 números pares aleatorios entre 20 y 60</p>
+<p>  D. Cambie el programa para imprimir 6 números impares aleatorios entre 25 y 65</p>
+</li>
+<li><p><em>Colores.</em> El siguiente programa de tortuga dibuja un cuadrado sólido de color púrpura oscuro; cópielo en <code>caos_2.py</code> y ejecútelo.
+Las operaciones <code>begin_fill()</code> y <code>end_fill()</code> que controlan esto son parte del paquete <code>turtle</code>.</p>
+<pre class="hljs"> <span class="hljs-keyword">from</span> turtle <span class="hljs-keyword">import</span> *
+
+ color(<span class="hljs-number">.7</span>, <span class="hljs-number">0</span>, <span class="hljs-number">.7</span>) 
+ begin_fill()
+ <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(<span class="hljs-number">0</span>,<span class="hljs-number">4</span>):
+     forward(<span class="hljs-number">80</span>)
+     right(<span class="hljs-number">90</span>)
+ end_fill()</pre><p>  A. El cuadrado es violeta debido a la operación <code>color(.7, 0, .7)</code>. Los colores se expresan como una combinación.
+de cantidades de luz roja, verde y azul, donde &quot;1&quot; representa la luz brillante de ese color y 0 representa
+No hay luz de ese color. El morado oscuro es algo de luz roja y algo de luz azul.
+Cambie el comando de color a <code>color(1, 0, 0)</code> para ver un cuadrado rojo brillante.</p>
+<p>  B. Cambie el programa para dibujar un cuadrado azul oscuro en lugar de rojo brillante.</p>
+<p>  C. Cambia el programa para dibujar un cuadrado amarillo brillante. (El amarillo es una combinación de luz roja y verde).</p>
+<p>  D. Cambie el programa para elegir un color aleatorio, usando el comando <code>random()</code> para elegir 3 colores aleatorios diferentes.
+números entre 0 y 1</p>
+<p>  E. Encierre la parte principal del programa en un bucle &quot;for&quot; para que el programa dibuje 10 cuadrados de colores aleatorios.
+uno encima del otro.</p>
+<p>  F. La función <code>goto(x,y)</code> mueve la tortuga a un punto determinado de la pantalla descrito por <code>x</code> e <code>y</code>. (La frase en inglés &quot;Go to&quot; podría traducirse como &quot;va a&quot;) Inserta una línea con <code>goto( -150, 100)</code> para acercar el cuadrado a la parte superior izquierda de la ventana.</p>
+<p>  G. Utilice un comando <code>goto</code> dentro del bucle del programa para dibujar cada cuadrado sucesivo en un punto aleatorio de la ventana.</p>
+<p>  H. Hay una línea que conecta cada cuadrado; use <code>penup()</code> y <code>pendown()</code> para evitar dibujar estas líneas.</p>
+<p>  I. Cambia el programa para que cada cuadrado no sea de cualquier color, sino de un tono aleatorio de verde.</p>
+</li>
+<li><p>El siguiente programa dibuja un camino con 10 segmentos de línea, girando 25 grados cada vez. Guárdelo y ejecútelo como <code>caos_3.py</code></p>
+<pre class="hljs"> <span class="hljs-keyword">from</span> turtle <span class="hljs-keyword">import</span> *
+
+ <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(<span class="hljs-number">0</span>,<span class="hljs-number">20</span>):
+     right(<span class="hljs-number">25</span>)
+     forward(<span class="hljs-number">20</span>)</pre><p> A. Modifica el programa para que, en lugar de girar 25 grados, la tortuga dé un giro aleatorio entre 90 y 90 grados en cada paso.
+(Esto se llama &quot;caminata aleatoria&quot;).</p>
+<p> B. Agregue otro bucle <code>for</code> fuera del anterior para dibujar 10 caminos con <code>goto(0,0)</code> para comenzar cada uno desde el centro. </p>
+<p> C. Agregue una línea <code>speed(0)</code> cerca de la parte superior de su programa para dibujar las líneas más rápido. 
+(Esto le dice a Python que mueva la tortugalo más rápido posible.</p>
+<p> D. Utilice <code>color(r,v,a)</code> para que cada línea tenga un color aleatorio diferente.</p>
+</li>
+</ol>
+<hr>
+<blockquote>
+<p>Dos paginas del Libro &quot;Un millón de dígitos aleatorios con 100.000 desviaciones normales, 1955, 1ª edición&quot;.</p>
+</blockquote>
+<blockquote>
+<p><img src="https://bitforms.art/wp-content/uploads/2020/02/rc_amrd_w.jpg" /></p>
+</blockquote>
+<hr>
+<p class="page" id="Nombres"></p><h1>Nombres</h1>
+<p>Python es una herramienta fantástica para realizar cálculos, porque podemos usar nombres para organizar 
+las piezas de un cálculo complejo.</p>
+<p>Déjame recordarte un poco de matemáticas. </p>
+<ul>
+<li><code>d = vt</code>, que su distancia es la velocidad multiplicada por el tiempo. Entonces, igualmente, <code>t = d / v</code>.</li>
+<li><code>d = kg</code>, que su distancia es Además, la distancia es el kilometraje multiplcado por la cantidad de gasolina. Entonces, la cantidad de gas necesaria es <code>g = d / k</code></li>
+</ul>
+<p>Imaginemos que somos parte de una empresa camionera con una ruta de Calca a Puno, 400km. 
+Un directivo sugiere que los conductores vayan lo más rápido posible, porque así se ahorra tiempo y, por tanto, 
+se reduce el coste por ruta. Ofrece este programa Python para calcular el costo</p>
+<pre class="hljs">distancia = <span class="hljs-number">400</span> <span class="hljs-comment"># km de Calca a Puno</span>
+velocidad = <span class="hljs-number">80</span> <span class="hljs-comment"># km / h</span>
+paga_por_hora = <span class="hljs-number">30</span> <span class="hljs-comment"># soles / h</span>
+
+tiempo = distancia / velocidad
+costo_de_tiempo = paga_por_hora * tiempo
+
+<span class="hljs-built_in">print</span>( <span class="hljs-string">&quot;Con veolcidad&quot;</span>, velocidad )
+<span class="hljs-built_in">print</span>( <span class="hljs-string">&quot;el costo del tiempo será&quot;</span>, costo_de_tiempo )</pre><p>Guarde y ejecute este programa como <code>nombres_a.py</code>.</p>
+<p>Algunos puntos de explicación:</p>
+<ul>
+<li>Python ignora todo lo que está a la derecha del símbolo <code>#</code>. Estos se denominan &quot;comentarios de código&quot; y pueden ayudar
+explique su código a los lectores (como su yo futuro) pero no tienen ningún efecto cuando se ejecuta el programa.
+Los uso para realizar un seguimiento de las unidades.</li>
+<li>Los símbolos <code>+</code> y <code>-</code> son suma y resta, y <code>*</code> y <code>/</code> representan multiplicación y división.</li>
+<li>El signo <code>=</code> es &quot;tarea&quot;. Significa &quot;deje que el nombre de la izquierda represente el valor de la derecha&quot;.
+Podemos elegir los nombres como queramos, y elegí nombres para sugerir el significado de cada cantidad, para que sea fácil.
+para comprender cada paso del cálculo.</li>
+<li>Cuando aparece un nombre en el lado derecho de <code>=</code>, Python pone su valor asignado en ese lugar. Así, en la línea 5, <code>distancia / velocidad</code>
+se convierte en <code>400/80</code> debido a las líneas anteriores. Python evalúa esto como 5 y asigna 5 al nombre &quot;tiempo&quot;. Luego, en la siguiente línea,
+la expresión <code>paga_por_hora * tiempo</code> pasa a ser <code>30 * 5</code>, que es <code>150</code>, y eso se asigna a <code>costo_de_tiempo.</code></li>
+</ul>
+<p><em>PARE AQUÍ y haga el ejercicio 1 a continuación.</em></p>
+<h2 id="rendimiento-de-la-gasolina">Rendimiento de la gasolina</h2>
+<p>Un colega no está de acuerdo y afirma que los conductores sólo deberían conducir a 60 km/h, porque esa es la velocidad a la que
+Nuestras camionetas tienen el mejor rendimiento de gasolina. Por una razón, a altas velocidades la resistencia al viento
+hace que el camión sea menos eficiente. Ha medido el kilometraje de nuestros camiones y tiene una fórmula para
+estimar el rendimiento de la gasolina. Ofrece el siguiente programa Python modificado:</p>
+<pre class="hljs">distancia = <span class="hljs-number">400</span> <span class="hljs-comment"># km de Cucsco a Puno</span>
+precio_combustible = <span class="hljs-number">20</span> / <span class="hljs-number">3.78</span>  <span class="hljs-comment"># soles / l</span>
+velocidad = <span class="hljs-number">60</span> <span class="hljs-comment"># km / h</span>
+
+<span class="hljs-comment"># Fórmula para el consumo de combustible a una velocidad determinada</span>
+kilometraje = <span class="hljs-number">25</span> * (<span class="hljs-number">1</span> - (velocidad - <span class="hljs-number">60</span>) ** <span class="hljs-number">2</span> / <span class="hljs-number">60</span> ** <span class="hljs-number">2</span>) <span class="hljs-comment"># km / l</span>
+
+cantidad_de_combustible = distancia / kilometraje
+costo_de_combustible = cantidad_de_combustible * precio_combustible
+
+<span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;Con velocidad&quot;</span>, velocidad)
+<span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;El costo de combustible será&quot;</span>, costo_de_combustible)</pre><p>Guarde y ejecute este programa como <code>nombres_b.py</code>.</p>
+<p>Un par de comentarios más para tu información.</p>
+<ul>
+<li>El <code>**</code> significa &quot;función de potencia&quot;, por lo que <code>x ** 2</code> es <code>x</code> al cuadrado, lo que significa <code>x * x</code>. Pero
+No te preocupes demasiado por esta fórmula por ahora; puedes confiar en que es razonable.</li>
+<li>Tenga en cuenta que la cantidad de gasolina multiplicada por el consumo de gasolina da la distancia recorrida; por lo tanto
+Podemos calcular la cantidad de gasolina que usaremos dividiendo la distancia por el kilometraje.</li>
+</ul>
+<p><em>PARE AQUÍ y haga el ejercicio 2 a continuación.</em></p>
+<h2 id="poniendo-todo-junto-">Poniendo todo junto.</h2>
+<p>Observa que ambas observaciones son correctas; el costo de la gasolina y el costo de
+Se deben tener en cuenta ambos aspectos del pago al conductor. Combinando los dos programas, tenemos esto:</p>
+<pre class="hljs">distancia = <span class="hljs-number">400</span> <span class="hljs-comment"># km de Calca a Puno</span>
+precio_combustible = <span class="hljs-number">20</span> / <span class="hljs-number">3.78</span>  <span class="hljs-comment"># soles / l</span>
+velocidad = <span class="hljs-number">75</span>  <span class="hljs-comment"># km / h</span>
+paga_por_hora = <span class="hljs-number">30</span> <span class="hljs-comment"># soles / h</span>
+
+tiempo = distancia / velocidad
+costo_de_tiempo = paga_por_hora * tiempo
+
+<span class="hljs-built_in">print</span>( <span class="hljs-string">&quot;Con velocidad&quot;</span>, velocidad)
+<span class="hljs-built_in">print</span>( <span class="hljs-string">&quot;El costo de tiempo será&quot;</span>, costo_de_tiempo )
+
+kilometraje = <span class="hljs-number">25</span> * (<span class="hljs-number">1</span> - (velocidad - <span class="hljs-number">60</span>) ** <span class="hljs-number">2</span> / <span class="hljs-number">60</span> ** <span class="hljs-number">2</span>) <span class="hljs-comment"># km / l</span>
+
+combustible = distancia / kilometraje
+costo_de_combustible = combustible * precio_combustible
+
+<span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;El costo de combustible será&quot;</span>, costo_de_combustible)
+
+costo_total = costo_de_tiempo + costo_de_combustible
+<span class="hljs-built_in">print</span>( <span class="hljs-string">&quot;Costo total será&quot;</span>, costo_total )</pre><p>Explorará más este programa en los ejercicios 3 y 4.</p>
+<p>Estos cálculos ilustran cómo Python permite usar nombres para dividir cálculos complejos en partes y volver a ensamblar las partes.</p>
+<h1 id="ejercicios">Ejercicios</h1>
+<ol>
+<li>Cambiando el valor de <code>velocidad</code> en <code>nombres_a.py</code>, completa la siguiente tabla. ¿Cuál de estas velocidades
+tiene el menor costo de tiempo?</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>Velocidad</th>
+<th>Costo de tiempo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>60</td>
+<td></td>
+</tr>
+<tr>
+<td>70</td>
+<td></td>
+</tr>
+<tr>
+<td>80</td>
+<td></td>
+</tr>
+<tr>
+<td>90</td>
+</tr>
+</tbody>
+</table>
+<p>2.Cambiando el valor de <code>velocidad</code> en <code>nombres_b.py</code>, completa la siguiente tabla. ¿Cuál de estas velocidades
+¿Tiene el costo de combustible más bajo?</p>
+<table>
+<thead>
+<tr>
+<th>Velocidad</th>
+<th>Costo de combustible</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>50</td>
+<td></td>
+</tr>
+<tr>
+<td>60</td>
+<td></td>
+</tr>
+<tr>
+<td>70</td>
+<td></td>
+</tr>
+<tr>
+<td>80</td>
+</tr>
+</tbody>
+</table>
+<ol start="3">
+<li>Como arriba, cambia el valor de <code>velocidad</code> en <code>nombres_c.py</code> para completar la siguiente tabla. Cual
+¿De estas velocidades tiene el costo total más bajo?</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>Velocidad</th>
+<th>Costo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>60</td>
+<td></td>
+</tr>
+<tr>
+<td>70</td>
+<td></td>
+</tr>
+<tr>
+<td>80</td>
+<td></td>
+</tr>
+<tr>
+<td>85</td>
+<td></td>
+</tr>
+<tr>
+<td>90</td>
+<td></td>
+</tr>
+<tr>
+<td>100</td>
+</tr>
+</tbody>
+</table>
+<ol start="4">
+<li>Supongamos que ahora solo les pagamos a los conductores 20 soles la hora. Cambie <code>nombres_c.py</code> en consecuencia y complete la tabla a continuación. ¿Cuál de estas velocidades tiene el costo total más bajo? ¿Tiene sentido que sea diferente al ejercicio 3?</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>Velocidad</th>
+<th>Costo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>60</td>
+<td></td>
+</tr>
+<tr>
+<td>70</td>
+<td></td>
+</tr>
+<tr>
+<td>80</td>
+<td></td>
+</tr>
+<tr>
+<td>85</td>
+<td></td>
+</tr>
+<tr>
+<td>90</td>
+<td></td>
+</tr>
+<tr>
+<td>100</td>
+</tr>
+</tbody>
+</table>
+<ol start="4">
+<li><p>Supongamos que compramos 6 manzanas a 1,5 soles cada una, 8 naranjas a 2 soles cada una y 16 plátanos a 1/2 soles cada una.
+cada. Podemos calcular el coste total así:</p>
+<pre class="hljs"> manzanas = <span class="hljs-number">1.5</span> * <span class="hljs-number">6</span>
+ naranjas = <span class="hljs-number">2</span> * <span class="hljs-number">8</span>
+ platanitos = <span class="hljs-number">0.5</span> * <span class="hljs-number">16</span>
+ total = manzanas + platanitos + naranjas
+ <span class="hljs-built_in">print</span>( <span class="hljs-string">&quot;El costo total es&quot;</span>, total )</pre><p> A. Guarda este programa en el archivo <code>nombres_4.py</code> y ejecútalo. ¿Cúal es el costo total?</p>
+<p> B. Supongamos que compramos 8 manzanas en lugar de 6. Cambie el programa para reflejar esto y ejecútelo para calcular el nuevo total.</p>
+<p> C. Continuando con la parte B, ¿y si las naranjas costaran 2,5 soles cada una?</p>
+<p> D. Finalmente queremos comprar también 1,5 kg de chirimoya a 8 soles el kg. Aumente el programa en consecuencia.</p>
+</li>
+<li><p>Compraste snacks para una reunión de 12 personas: 2/3 kg de maná a 10 soles/kg, un paquete de chulpi a 11 soles, 3 tortas a 7 soles cada una,
+y 12 botellas de refresco a 1,5 soles cada una. Escribe un programa <code>nombres_5.py</code> que calcule e imprima el costo total de los snacks y también el costo por persona. Su programa debe utilizar nombres de variables significativos para que sea fácil de entender, y los mensajes que imprima el programa deben ser fáciles de leer, no solo números sin contexto.</p>
+</li>
+<li><p>Copie y pegue el siguiente código en un nuevo archivo <code>nombres_6.py</code> (que está destinado aproximadamente a convertir una edad en
+años a una edad en días) y ejecutarlo.</p>
+<pre class="hljs"> nombres = <span class="hljs-string">&quot;Lionel Andrés&quot;</span>
+ apellidos <span class="hljs-string">&quot;Messi Cuccittini&quot;</span>
+ edad = <span class="hljs-number">37</span>
+
+ nombre_completo = nombres + <span class="hljs-string">&quot; &quot;</span> + apellidos
+ edad_en_dias = <span class="hljs-number">365</span> x edad
+
+ <span class="hljs-built_in">print</span>( nombre_completo, <span class="hljs-string">&quot;ha vivido mas que&quot;</span> edad_en_dias, <span class="hljs-string">&quot;dias&quot;</span> )</pre><p> A. Uno por uno, busque y corrija los 3 errores del programa.</p>
+<p> B. Leyendo el programa y el resultado, explica brevemente qué hace la línea <code>nombre_completo = nombres + &quot; &quot; + apellidos</code>.</p>
+</li>
+</ol>
+<hr>
+<blockquote>
+<p><img src="https://github.com/johncroth/pythonEd2024/assets/122372203/0443db54-225f-4ac0-90d7-d70cf36bd3e3" /></p>
+</blockquote>
+<p class="page" id="Memoria"></p><h1>Memoria</h1>
+<p>Una computadora contiene una cierta cantidad de memoria. Los programas utilizan esta memoria para hacer su trabajo mientras se ejecutan.
+En Python, es sencillo almacenar cosas en parte de esta memoria y leerlas nuevamente más tarde.</p>
+<p>Ya hemos visto un ejemplo, la <em>variable de bucle</em> que almacena el número de la iteración actual a través de un bucle:
+Guarde y ejecute este programa como <code>memoria_a.py</code>:</p>
+<pre class="hljs"><span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(<span class="hljs-number">0</span>,<span class="hljs-number">5</span>):
+    <span class="hljs-built_in">print</span>( <span class="hljs-string">&quot;El valor de la variable de bucle es&quot;</span>, i )</pre><p>En el bucle <code>for</code>, Python reserva una pequeña porción de memoria bajo el nombre de la variable del bucle <code>i</code> y la actualiza con
+el número de veces que pasa por el bucle. Las declaraciones <code>print</code> leen el valor almacenado en esta ubicación y construyen y
+muestra un mensaje de ese valor.</p>
+<h2 id="tu-propias-variables">Tu propias variables</h2>
+<p>Para poner algo en la memoria, crea un nombre para una <em>variable</em> y &quot;almacena&quot; un valor en ella usando el signo <code>=</code>. Por ejemplo,
+guarde y ejecute el siguiente programa en <code>memoria_b.py</code>:</p>
+<pre class="hljs">nombre_del_producto = <span class="hljs-string">&quot;Mangos&quot;</span>
+precio = <span class="hljs-number">10</span>
+<span class="hljs-built_in">print</span>( <span class="hljs-string">&quot;El nombre del producto es&quot;</span>, nombre_del_producto, <span class="hljs-string">&quot;y el precio es&quot;</span>, precio)</pre><p>Aquí, <code>nombre_del_producto</code> es un nombre que hace referencia a una determinada ubicación en la memoria de la computadora, y
+Puedes almacenar cualquier valor que desees en esta ubicación. La primera línea almacena una <em>cadena</em> (de letras) &quot;Mangos&quot; en
+este lugar. Asimismo, <code>precio</code> es un nombre que hace referencia a un
+ubicación determinada y diferente en la memoria de la computadora. La segunda línea almacena el valor &quot;10&quot; en esta ubicación.</p>
+<p>La tercera línea imprime un mensaje, pero al hacerlo busca los valores que se almacenaron en estas ubicaciones. Nosotros
+Podemos ver esto un poco más claro si cambiamos los valores:</p>
+<pre class="hljs">nombre_del_producto = <span class="hljs-string">&quot;Mangos&quot;</span>
+precio = <span class="hljs-number">10</span>
+<span class="hljs-built_in">print</span>( <span class="hljs-string">&quot;El nombre del producto es&quot;</span>, nombre_del_producto, <span class="hljs-string">&quot;y el precio es&quot;</span>, precio)
+nombre_del_producto = <span class="hljs-string">&quot;Chirimoya&quot;</span>
+precio = <span class="hljs-number">12</span>
+<span class="hljs-built_in">print</span>( <span class="hljs-string">&quot;El nombre del producto es&quot;</span>, nombre_del_producto, <span class="hljs-string">&quot;y el precio es&quot;</span>, precio)</pre><p>Verás:</p>
+<pre class="hljs">El nombre del producto <span class="hljs-built_in">es</span> Mangos y el precio <span class="hljs-built_in">es</span> <span class="hljs-number">10</span>
+El nombre del producto <span class="hljs-built_in">es</span> Chrimioya y el precio <span class="hljs-built_in">es</span> <span class="hljs-number">12</span></pre><p>Las líneas que imprime el programa son diferentes, aunque las dos declaraciones <code>print</code> son idénticas,
+porque cada vez que la declaración <code>print</code> busca los valores almacenados en la memoria de la computadora. Líneas 4 y 5
+ponen nuevos valores en lugar de los antiguos almacenados en esos lugares de la memoria.</p>
+<p>Si bien es importante comprender lo que está sucediendo, cambiar el valor de una variable como el anterior suele resultar confuso,
+y es mejor introducir un nombre diferente. Pero es importante en ciertos cálculos, como sigue:</p>
+<h2 id="variables-del-acumulador">Variables del acumulador</h2>
+<p>Podemos aprovechar esta capacidad de actualizar los valores de las variables para hacer algunos cálculos. Por ejemplo, 
+¿cuál es la suma de todos los números entre 0 y 5? Bueno, es <code>5 + 4 + 3 + 2 + 1 + 0</code> que es, um, 15. 
+(Guarde y ejecute lo siguiente como <code>memoria_c.py</code>)</p>
+<pre class="hljs">suma = <span class="hljs-number">0</span>
+<span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(<span class="hljs-number">0</span>,<span class="hljs-number">6</span>):
+    suma = suma + i
+<span class="hljs-built_in">print</span>( <span class="hljs-string">&quot;La suma es&quot;</span>, suma )</pre><p>(Recuerde que <code>rango(0,6)</code> no incluye 6.) Lo más impresionante es que podemos sumar todos los números entre 0 y 100, solo
+modificando el rango en <code>memoria_c.py</code>:</p>
+<pre class="hljs">suma = <span class="hljs-number">0</span>
+<span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(<span class="hljs-number">0</span>,<span class="hljs-number">101</span>):
+    suma = suma + i
+<span class="hljs-built_in">print</span>( <span class="hljs-string">&quot;La suma es&quot;</span>, suma )</pre><h1 id="ejercicios">Ejercicios</h1>
+<ol>
+<li><p>A. Escriba un programa que use un bucle <code>for</code> para calcular <code>7!</code> (digamos &quot;factorial 7&quot;) que sea simplemente <code>1 * 2 * 3 * 4 * 5 * 6 * 7</code>. (El
+la respuesta correcta es 5040.) Los &quot;factoriales&quot; como este son importantes en estadística.</p>
+<p>B. Cambie el programa para calcular <code>21!</code>, que es <code>1 * 2 * ... * 20 * 21.</code> (La respuesta correcta tiene 20 dígitos)</p>
+</li>
+<li><p><em>Amortización del préstamo.</em> Cuando alguien pide dinero prestado (Por ejemplo 100000 soles) existe un acuerdo de que el prestamista
+recibirá intereses (por ejemplo, 4% anual, que se acumula cada mes) y el prestatario pagará una cantidad fija (por ejemplo,
+2000 soles) cada mes. Cada mes el saldo del préstamo disminuye una determinada cantidad. El siguiente programa hace esto
+cálculo. Guárdelo como <code>memoria_2.py</code> y ejecútelo, luego responda las siguientes preguntas y realice las modificaciones solicitadas.</p>
+<pre class="hljs"> prestado = <span class="hljs-number">100000</span>
+ pagado_mensual = <span class="hljs-number">2000</span>
+ tasa_anual = <span class="hljs-number">.04</span>
+ tasa_mensual = tasa_anual / <span class="hljs-number">12</span>
+
+ saldo = prestado
+
+ <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(<span class="hljs-number">1</span>,<span class="hljs-number">13</span>):
+     saldo = saldo + saldo * tasa_mensual - pagado_mensual
+     <span class="hljs-built_in">print</span>( <span class="hljs-string">&quot;Despues mes&quot;</span>, i, <span class="hljs-string">&quot;el saldo es&quot;</span>, saldo )</pre><p> A. Confirme mediante un cálculo directo que las 2 primeras cantidades de la salida son correctas. Es decir, del saldo original se suma <code>.04/12 = .0033</code> por ciento del saldo y se resta el pago mensual de 2000 soles. Luego, repita esto con el nuevo equilibrio.</p>
+<p> B. ¿Cuál es el saldo después de 1 año (es decir, 12 meses)?</p>
+<p> C. Modifique el programa para mostrar el saldo después de 2 años. ¿El préstamo se cancela por completo después de 2 años?</p>
+<p> D. Modifique el programa para mostrar el saldo después de 5 años. ¿El préstamo está completamente 
+cancelado después de este período de tiempo? Después exactamente ¿En cuántos meses se liquida completamente el préstamo? (¿Cómo aparece esto en el resultado?)</p>
+<p> E. Supongamos ahora que el pago mensual fuera 2500 en lugar de 2000. Modifique el programa para reflejar esta diferencia y ejecútelo. ¿Después de cuántos meses se liquida el préstamo?</p>
+<p> F. Aún utilizando un pago mensual de 2500, ¿qué pasaría si la tasa de interés fuera del 3 por ciento en lugar del 4 por ciento? ¿Después de cuántos meses se liquida la carga?</p>
+<p> G. ¿Qué pasa si no hubiera intereses (es decir, una tasa del 0 por ciento)? ¿Después de cuántos meses se liquida el préstamo? Hay una explicación sencilla de la respuesta en este caso: ¿qué es?</p>
+</li>
+<li><p>Supongamos que depositas 10000 en una cuenta bancaria que paga un 4% de interés anual &quot;no compuesto.&quot;
+Entonces, podemos usar la calculacion muy basica: al final de un año, el saldo sería de 
+<code>10400 = 10000 + 10000 * 0.04</code>.</p>
+<p> A. Realice el siguiente cálculo a mano, sin utilizar Python. ¿Cuál será el saldo después de 2 años, suponiendo que no agregas ni retiras dinero excepto los intereses acumulados? Simplemente realiza este cálculo en papel. (La respuesta es 10816. 
+¿Por qué es más de 10800?) ¿Cuál será el saldo después de 3 años? (Nosotros dicimos que este es &quot;interés compuesto,&quot; porque
+estamos ganando interés del deposito original y tambien del interés hemos ganado en los años anteriores.)</p>
+<p> B. Escriba un programa Python en <code>memoria_3.py</code> que calcule e imprima el saldo de la cuenta 
+después de 1, 2 y 3 años. Hacer esto almacenando el valor original en una variable llamada 
+<code>saldo</code> y actualizando el valor con <code>saldo = saldo + ???</code> donde <code>???</code> significa una expresión simple 
+basada en el cálculo de la parte A.</p>
+</li>
+<li><p><em>La computacion de interés con bucle.</em> En el archivo <code>memoria_4.py</code>, copie y guarde el siguiente código. Luego, ajuste el programa para calcular el interés compuesto durante 5 años, tal como se hizo en el problema anterior. Verifique que coincida con su respuesta previa para los primeros 3 años. Posteriormente, modifíquelo para calcular el interés a lo largo de 10 años. Finalmente, realice otra modificación para utilizar una tasa del 5% en lugar del 4%.</p>
+<pre class="hljs"> saldo = <span class="hljs-number">10000</span>
+ tasa = <span class="hljs-number">.04</span>
+
+ <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(<span class="hljs-number">0</span>,<span class="hljs-number">5</span>):
+     saldo = saldo + <span class="hljs-number">0</span> <span class="hljs-comment"># Corrige esta linea</span>
+     <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;Despues&quot;</span>, i, <span class="hljs-string">&quot;años, el saldo es&quot;</span>, saldo)</pre></li>
+</ol>
+<p class="page" id="Entradas"></p><h1>Entradas</h1>
+<p>Python incluye una función sencilla llamada <code>input()</code> que muestra un mensaje y luego captura lo que el usuario escribe, hasta que se presiona la tecla Enter. Luego, <code>input()</code> devuelve el texto ingresado por el usuario para que podamos almacenarlo en una variable y usarlo después en el programa.</p>
+<pre class="hljs">nombre_del_usuario = <span class="hljs-built_in">input</span>(<span class="hljs-string">&quot;Entra tu nombre: &quot;</span>)
+<span class="hljs-built_in">print</span>( <span class="hljs-string">&quot;Hola,&quot;</span>, nombre_del_usuario, <span class="hljs-string">&quot;Buenas tardes&quot;</span> )</pre><p>Copia, pega y guarda este programa en un archivo llamado <code>entrada_a.py</code>. Haz clic en la consola, escribe tu nombre cuando aparezca el mensaje, presiona Enter, y observa la línea que se imprime con tu nombre. Prueba escribiendo otras cosas además de tu nombre.</p>
+<p>La primera línea le indica a Python que recolecte una entrada del usuario desde la consola y que la almacene en una variable llamada <code>nombre_del_usuario</code>. (Podemos elegir cualquier nombre de variable para referirnos al valor ingresado). Luego, el programa utiliza esta variable dentro del texto que se va a imprimir.</p>
+<p>La diferencia aquí es que el texto que usamos en el mensaje no se conoce antes de ejecutar el programa.</p>
+<p>Podemos pedirle al usuario que ingrese datos múltiples veces también. Guarda y ejecuta el siguiente programa en un archivo llamado <code>entrada_b.py</code>:</p>
+<pre class="hljs">tu_nombre = <span class="hljs-built_in">input</span>( <span class="hljs-string">&quot;Tu nombre, por favor:&quot;</span> )
+nombre_del_amigo = <span class="hljs-built_in">input</span>( <span class="hljs-string">&quot;El nombre de un amigo, por favor:&quot;</span> )
+
+<span class="hljs-built_in">print</span>( <span class="hljs-string">&quot;He escuchado que&quot;</span>, nombre_del_amigo, <span class="hljs-string">&quot;es un amigo de&quot;</span>, tu_nombre )</pre><h2 id="ejercicios">Ejercicios</h2>
+<ol>
+<li><p>Crea un programa en un archivo llamado <code>entrada_1.py</code> que primero solicite al usuario que ingrese su nombre y luego le pida al usuario que ingrese su DNI. Con esta información, el programa deberá imprimir lo siguiente:</p>
+<pre class="hljs"> Yo, <span class="hljs-keyword">Juan </span>Rojo, identificado con DNI peruano número <span class="hljs-number">000000000</span>,
+ Declaro solemnemente que no planeo nada <span class="hljs-keyword">bueno.
+</span>
+ Atentamente, <span class="hljs-keyword">Juan </span>Rojo.</pre><p> (Por supuesto, el nombre y número en el resultado serán los que fueron ingresados por el usuario.)</p>
+</li>
+<li><p>Guarde el siguiente programa en el archivo <code>entrada_2.py</code>, ejecútelo y corrija todos los errores. (Uno de los errores, que Python no detectará, es que deberíamos usar el color favorito del usuario, pero el programa siempre imprime &quot;moradas&quot;).</p>
+<pre class="hljs"> color_favorito = <span class="hljs-built_in">input</span>( <span class="hljs-string">&quot;¿Cuál es tu color favorito?&quot;</span> )
+ vegetal_favorito = <span class="hljs-built_in">input</span>()
+ <span class="hljs-built_in">print</span>( Cual es tu vegetal favorito )
+ <span class="hljs-built_in">print</span> <span class="hljs-string">&quot;Supongo que prefieres que tus&quot;</span>, vegetal_favorito, <span class="hljs-string">&quot;sean moradas.&quot;</span></pre></li>
+<li><p>A. El programa de abajo es &quot;correcto&quot;, pero realmente no hace lo que podríamos esperar. Guarde este programa como <code>entrada_3.py</code> y ejecútelo algunas veces con diferentes entradas, luego explique qué puede ser confuso.</p>
+<pre class="hljs">numero_a = <span class="hljs-built_in">input</span>( <span class="hljs-string">&quot;Entra un numero: &quot;</span> )
+numero_b = <span class="hljs-built_in">input</span>( <span class="hljs-string">&quot;Entra un otra numero: &quot;</span> )
+total = numero_a + numero_b
+<span class="hljs-built_in">print</span>( <span class="hljs-string">&quot;La suma de ellos es&quot;</span>, total )</pre><p>B. Cambie el programa com abaja. La función <code>float</code> convierte texto (una &quot;cadena&quot;) a un numero. Pruebe el programa mas, con numeros y
+tambien combinaciones de letras, numeros y símbolos.</p>
+<pre class="hljs">numero_a = <span class="hljs-built_in">float</span>( <span class="hljs-built_in">input</span>( <span class="hljs-string">&quot;Entra un numero: &quot;</span> ))
+numero_b = <span class="hljs-built_in">float</span>( <span class="hljs-built_in">input</span>( <span class="hljs-string">&quot;Entra un otra numero: &quot;</span> ))
+total = numero_a + numero_b
+<span class="hljs-built_in">print</span>( <span class="hljs-string">&quot;La suma de ellos es&quot;</span>, total )</pre></li>
+</ol>
+<hr>
+<blockquote>
+<p><img src="https://github.com/johncroth/pythonEd2024/assets/122372203/02aa7860-e5da-4fc5-ba51-8a2d98263b79" /></p>
+</blockquote>
+<blockquote>
+<p>Seguimos escribiendo en la consola, pero al menos hemos superado las pantallas redondas. Algunos de los primeros videojuegos fueron escritos para esta computadora, el Control Data 6600, construida por el legendario Seymour Cray. más de 100 se vendieron por $2,3 millones cada uno, aproximadamente $23 millones en la actualidad. </p>
+</blockquote>
+<p class="page" id="Tiempo"></p><h1>Tiempo</h1>
+<p>Cada computadora que se me ocurre tiene un reloj en su centro. (En realidad, varios relojes.) En Python, podemos usar el modulo <code>time</code> (del inglés palabra para `tiempo&#39;) para ciertas cosas relacionadas con el tiempo.</p>
+<p>Primero, la función <code>sleep(x)</code> (&quot;dormir&quot;) le dice a la computadora que haga una pausa por <code>x</code> segundos; <code>x</code> puede ser una valor decimal mas
+que cero. Guarde este programa en <code>tiempo_a.py</code> y ejecútelo.</p>
+<pre class="hljs"><span class="hljs-built_in">print</span>( <span class="hljs-string">&quot;Esperate...&quot;</span> )
+sleep( <span class="hljs-number">3</span> )
+<span class="hljs-built_in">print</span>( <span class="hljs-string">&quot;Ahorita...&quot;</span> )
+sleep( <span class="hljs-number">.5</span> )
+<span class="hljs-built_in">print</span>( <span class="hljs-string">&quot;Listo, gracias.&quot;</span> )</pre><p>Vaya, eso no funciona, porque la función <code>sleep</code> pertenece a un &quot;módulo&quot; (paquete de código) se llama <code>time</code> que Python no usa a menos que se lo indiquemos. Necesitoms poner esta linea en la cima:</p>
+<pre class="hljs"><span class="hljs-keyword">from</span> time <span class="hljs-keyword">import</span> sleep</pre><p>Ahora, ejecútelo y observe la salida.</p>
+<p>Segundo, la función <code>time()</code> devuelve un número que representa cuántos segundos han transcurrido. Guarde este programa en <code>tiempo_b.py</code> y ejecútelo.</p>
+<pre class="hljs"><span class="hljs-keyword">from</span> time <span class="hljs-keyword">import</span> time, sleep
+
+antes = time()
+<span class="hljs-built_in">print</span>( <span class="hljs-string">&quot;Antes, la hora era&quot;</span>, antes )
+sleep( <span class="hljs-number">2</span> )
+despues = time()
+<span class="hljs-built_in">print</span>( <span class="hljs-string">&quot;Despues, la hora era&quot;</span>, despues )
+diferencia = despues - antes
+<span class="hljs-built_in">print</span>( diferencia, <span class="hljs-string">&quot;segundos transcurridos&quot;</span> )</pre><p>El valor devuelto por <code>time()</code> es el número de segundos transcurridos desde un cierto punto de tiempo en el pasado, por un reloj en la computadora. Entonces no es muy confiable. Sin embargo, las <em>diferencias</em> en este valor en dos puntos de su programa tienen sentidos.</p>
+<p>Por eso, el programa llama a la función <code>time()</code> dos veces, (en la líneas 3 y 6), dormiendo en el medio. Guarda los valores por <code>time()</code> en cada punto, y calcula e imprime la diferencia.</p>
+<h2 id="ejercicios">Ejercicios</h2>
+<ol>
+<li><p>La precisión de <code>time()</code>
+ A. Escriba un programa <code>tiempo_1.py</code> utilizando un bucle <code>for</code> que imprima <code>time()</code> 10 veces seguidas, sin pausas entre ellas. ¿El cambio de valor cada vez? ¿Por qué no?</p>
+<p> B. Agrega un <code>sleep(.01)</code> dentro del bucle. ¿Exactamente 10 milisegundos separan los diferentes tiempos?</p>
+<p> C. Repita con <code>sleep(.1)</code> en su lugar. ¿Están siempre separados por 100 milisegundos?</p>
+<p> D. Finalmente, igualmente con <code>sleep(1).</code></p>
+</li>
+<li><p>El siguiente programa le pide al usuario que presione &quot;Entrar&quot; y luego presione &quot;Entrar&quot; nuevamente 3 segundos después, e imprime averiguar el tiempo real transcurrido. Cópialo y guárdalo en <code>tiempo_2.py</code>, corrige cualquier error y ejecútalo varias veces.  </p>
+<pre class="hljs"><span class="hljs-keyword">from</span> time <span class="hljs-keyword">import</span> time
+antes = time()
+<span class="hljs-built_in">input</span>( <span class="hljs-string">&quot;Presione Enter y presiónelo nuevamente 3 segundos después.&quot;</span> )
+<span class="hljs-built_in">input</span>( <span class="hljs-string">&quot;Esperando...&quot;</span> )
+despues = time()
+differencia = despues - antes
+<span class="hljs-built_in">print</span>( <span class="hljs-string">&quot;De hecho, hubo&quot;</span>, differencia, <span class="hljs-string">&quot;segundos entre preciones&quot;</span> )</pre></li>
+<li><p>Escribe un juego realmente simple, en el archivo <code>tiempo_3.py</code>. Pídele al usuario que presione enter 3 veces en un tempo constante, usando 3 instrucciones <code>input()</code>. Mantener seguimiento del tiempo transcurrido. 
+Después de la tercera pulsación, y muestre cuánto tiempo tardó el usuario entre cada par de pulsaciones. Vea el resultado a continuación para ver un ejemplo.</p>
+<pre class="hljs"> <span class="hljs-attribute">Toca</span> Enter <span class="hljs-number">3</span> veces en tiempo constanta
+ <span class="hljs-attribute">Otra</span> vez
+ <span class="hljs-attribute">Una</span> vez mas
+ <span class="hljs-attribute">0</span>.<span class="hljs-number">8378393650054932</span> vs <span class="hljs-number">0</span>.<span class="hljs-number">7104668617248535</span></pre></li>
+<li><p>A menudo es necesario recordar a las máquinas que hagan las cosas según un horario. Python es cada vez más popular
+como lenguaje para &quot;microcontroladores&quot; (computadoras para uso en pequeños dispositivos) que realizan este proceso
+flexible.</p>
+<p> A. Copia este programa a <code>tiempo_4.py</code> y verifica que imprime 10 mensajes con un retraso de 1 segundo, approximatmente.</p>
+<pre class="hljs"> <span class="hljs-keyword">from</span> time <span class="hljs-keyword">import</span> sleep, time
+
+ empezo = time()
+ <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(<span class="hljs-number">0</span>, <span class="hljs-number">10</span>):
+     <span class="hljs-built_in">print</span>( <span class="hljs-string">&quot;Parpadea la luz número 1:&quot;</span>, time() - empezo)
+     sleep( <span class="hljs-number">1</span> )</pre><p> B. Cambia el programa para que también imprima &quot;Parpadea la luz número 2&quot; (con la tiempo transcurrido) cada medio segundo, como, así como los mensajes anteriores cada segundo.</p>
+<p> C. Cambie el programa para que el parpadeo de la luz número 2 no ocurra simultáneamente con el
+ parpadeo de la luz 1, pero está escalonado por lo que ocurre 1/4 y 3/4 de 
+ segundo después del parpadeo de la luz numero 1.</p>
+<p> D. Cambia el programa para que imprima &quot;Parpadea la luz número 3&quot; cinco veces por segundo, así como
+ todos los mensajes anteriores con su tiempo anterior.</p>
+</li>
+</ol>
+<p class="page" id="Orden"></p><h1>Orden</h1>
+<p>Creating a list with append
+Creating a list from scratch
+Iterating over a list of items with for
+Zip?
+Sorting a list
+Accessing the ith member.
+length of list.
+for loop over lists.
+lists as a funny way to name variables.</p>
+<p>Exercises</p>
+<p>Errors: including index out of range.
+sum function
+percentiles of a list
+percentiles of summations of lists of random numbers.
+choosing a random element of a list.
+removing from list.</p>
+<p>magic 8-ball.</p>
+<h2 id="recopilaci-n-de-listas-de-n-meros">Recopilación de listas de números</h2>
+<p>Puede crear y almacenar una lista de números aleatorios como esta:</p>
+<pre class="hljs"><span class="hljs-keyword">from</span> random <span class="hljs-keyword">import</span> randint
+
+numeros = []
+<span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(<span class="hljs-number">10</span>):
+    numeros.append(randint(<span class="hljs-number">0</span>,<span class="hljs-number">100</span>))
+
+<span class="hljs-built_in">print</span>(numeros)</pre><p>Save this program in <code>caos_a.py</code> and run it. In this program:</p>
+<ul>
+<li>We assign <code>numeros</code> a new empty list (denoted <code>[]</code>) </li>
+<li>Then, 10 times, we <code>append</code> (add to the end of the list) a random integer. </li>
+<li>Finally, we print the list to the console.</li>
+</ul>
+<p>Of course, we can put any numbers we like in the list. Add the following lines to <code>caos_a.py</code> and run it.</p>
+<pre class="hljs">mas_numeros = []
+<span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>( <span class="hljs-number">20</span> ):
+    mas_numeros.append(<span class="hljs-number">100</span> - <span class="hljs-number">5</span> * i)
+
+<span class="hljs-built_in">print</span>(mas_numeros)</pre><p>Muy a menudo, la lista representará datos recopilados de alguna fuente y querrá analizar estos datos.
+Para hacerlo, a menudo necesitamos ordenar los elementos de la lista.</p>
+<h2 id="creating-lists-directly">Creating lists directly</h2>
+<p>Save and run the following program in <code>orden_b.py</code>. </p>
+<pre class="hljs">cosas = [<span class="hljs-number">2</span>,<span class="hljs-number">8</span>,<span class="hljs-number">3.5</span>,<span class="hljs-number">14</span>,<span class="hljs-number">2</span>]
+<span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;Las cosas son&quot;</span>, cosas)</pre><p>Anything that can be stored in a variable can be stored in a list.</p>
+<h2 id="listas-ordenadas">Listas ordenadas</h2>
+<p>La función <code>sorted</code> (&quot;ordenado&quot;) crea una nueva lista con los mismos elementos en un orden diferente. Add
+the following lines to <code>orden_b.py</code> and run it and note the output.</p>
+<pre class="hljs">cosas = [<span class="hljs-number">2</span>,<span class="hljs-number">8</span>,<span class="hljs-number">3.5</span>,<span class="hljs-number">14</span>,<span class="hljs-number">2</span>]
+cosas_en_orden = <span class="hljs-built_in">sorted</span>(cosas)
+<span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;Original&quot;</span>, cosas)
+<span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;Ordenado&quot;</span>, cosas_en_orden)</pre><h2 id="extraer-datos-de-una-lista-">Extraer datos de una lista.</h2>
+<p>Para averiguar el número de elementos en una lista, use la función <code>len</code> (<code>len</code> es corto
+para el inglés &quot;length&quot;, que significa &quot;longitud&quot; en español) Y, para hallar el valor de un elemento de
+lista, utilice las siguientes expresiones:</p>
+<pre class="hljs">cosas = [<span class="hljs-number">2</span>,<span class="hljs-number">8</span>,<span class="hljs-number">3.5</span>,<span class="hljs-number">14</span>,<span class="hljs-number">2</span>]
+cosas_en_orden = <span class="hljs-built_in">sorted</span>(cosas)
+longitud = <span class="hljs-built_in">len</span>(cosas_en_orden)
+<span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;El mas pequeno es&quot;</span>, cosas_en_orden[<span class="hljs-number">0</span>]) <span class="hljs-comment"># primero elemento </span>
+<span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;El mas grande es&quot;</span>, cosas_en_orden[longitud - <span class="hljs-number">1</span>]) <span class="hljs-comment"># ultimo elemento</span>
+<span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;El tercero numero en las lista original era&quot;</span>, cosas[<span class="hljs-number">2</span>])</pre><p>Como puede ver, los elementos de la lista están numerados a partir de <code>0</code>, lo que hace que
+<code>longitud - 1</code> el índice del último elemento de la lista. Y <code>cosas[2]</code> es el tercero
+elemento de la lista original, después de <code>cosas[0]</code> y <code>cosas[1]</code>.</p>
+<h1 id="ejercicios">Ejercicios</h1>
+<ol>
+<li>Spam. Save the following in the file <code>orden_1.py</code> 
+<code>`</code>python
+correos = [&quot;<a href="#mailtogeorgeaol.com">george@aol.com</a>&quot;, &quot;<a href="#mailtonadieexample.com">nadie@example.com</a>&quot;, &quot;<a href="#mailtowilmerjuno.com">wilmer@juno.com</a>&quot;, &quot;<a href="#mailtodoloreshotmail.com">dolores@hotmail.com</a>&quot;]</li>
+</ol>
+<p>for email in correos:
+    print( &quot;Querido(a) &quot;, email )
+    print( &quot;Thankyou for using our free application, which lets you watch thousands&quot; )
+    print( &quot;of current movies while encrypting the hard drive on your computer to&quot; )
+    print( &quot;render it useless.&quot;)
+    print( &quot;Thanks!&quot; )
+    print()
+    print( &quot;-------&quot; )</p>
+<pre class="hljs">    A. Add <span class="hljs-keyword">a</span> <span class="hljs-keyword">new</span> email address, in the second position in the <span class="hljs-keyword">list</span>, <span class="hljs-keyword">to</span> the <span class="hljs-keyword">list</span> of emails.
+    B.  
+
+<span class="hljs-number">1</span>. Escriba un juego de adivinación simple <span class="hljs-keyword">en</span> <span class="hljs-keyword">el</span> archivo `orden_1.<span class="hljs-keyword">py</span>` comenzando <span class="hljs-keyword">con</span> <span class="hljs-keyword">el</span> siguiente <span class="hljs-keyword">c</span>ódigo. Su
+El juego imprimirá <span class="hljs-keyword">una</span> sola <span class="hljs-keyword">l</span>ínea de instrucciones. Luego, cuatro veces, <span class="hljs-keyword">le</span> pedirá <span class="hljs-keyword">al</span> usuario <span class="hljs-keyword">una</span> pregunta 
+de sí <span class="hljs-keyword">o</span> <span class="hljs-keyword">no</span> <span class="hljs-keyword">con</span> `<span class="hljs-built_in">input</span>().` Después de cada entrada, su programa imprimirá <span class="hljs-keyword">una</span> selección 
+aleatoria de <span class="hljs-keyword">la</span> lista `respuestas` <span class="hljs-keyword">a</span> continuación. Después de <span class="hljs-keyword">la</span> cuarta pregunta, <span class="hljs-keyword">el</span> programa 
+deberí<span class="hljs-keyword">a</span> imprimir <span class="hljs-string">&quot;Hemos terminado&quot;</span>. <span class="hljs-keyword">y</span> punto.
+    ```<span class="hljs-keyword">python</span>
+    respuestas = [
+      <span class="hljs-string">&quot;Sí, definitivamente.&quot;</span>,
+      <span class="hljs-string">&quot;No, de ninguna manera.&quot;</span>,
+      <span class="hljs-string">&quot;Quizás&quot;</span>,
+      <span class="hljs-string">&quot;No puedo predecirlo en este momento.&quot;</span>,
+      <span class="hljs-string">&quot;No cuentes con ello.&quot;</span>,
+      <span class="hljs-string">&quot;No lo veo bien.&quot;</span>,
+      <span class="hljs-string">&quot;No hay duda al respecto.&quot;</span>,
+      <span class="hljs-string">&quot;No hay posibilidad.&quot;</span>,
+    ]</pre><pre class="hljs">B. Remove <span class="hljs-keyword">the</span> <span class="hljs-keyword">last</span> <span class="hljs-number">3</span> <span class="hljs-keyword">items</span> <span class="hljs-built_in">from</span> <span class="hljs-keyword">the</span> list <span class="hljs-keyword">of</span> responses. Run <span class="hljs-keyword">the</span> program <span class="hljs-keyword">at</span> least <span class="hljs-number">3</span> times. Does <span class="hljs-keyword">the</span> program still work? </pre><ol>
+<li><p>En el archivo &quot;orden_1.py&quot;, escriba un &quot;juego&quot; que mida la capacidad del usuario para presionar la tecla 
+<code>Enter</code> en ritmo, pero que ahora le pide al usuario que presione la tecla Intro 10 veces a un ritmo 
+constante. Almacene el tiempo transcurrido entre cada par de pulsaciones de teclas en una lista. Cuando termine, 
+muestre la lista de tiempos entre pulsaciones, y luego también el menor y el mayor de estos valores. 
+Mas o menos como esto:</p>
+<pre class="hljs"> Empujar <span class="hljs-symbol">&lt;Enter&gt;</span> para empezar, <span class="hljs-keyword">y</span> presionane <span class="hljs-keyword">en</span> ritmo <span class="hljs-number">10</span> veces mas.
+ Empujar <span class="hljs-symbol">&lt;Enter&gt;</span> otra vez
+ Empujar <span class="hljs-symbol">&lt;Enter&gt;</span> otra vez
+ Empujar <span class="hljs-symbol">&lt;Enter&gt;</span> otra vez
+ Empujar <span class="hljs-symbol">&lt;Enter&gt;</span> otra vez
+ Empujar <span class="hljs-symbol">&lt;Enter&gt;</span> otra vez
+ Empujar <span class="hljs-symbol">&lt;Enter&gt;</span> otra vez
+ Empujar <span class="hljs-symbol">&lt;Enter&gt;</span> otra vez
+ Empujar <span class="hljs-symbol">&lt;Enter&gt;</span> otra vez
+ Empujar <span class="hljs-symbol">&lt;Enter&gt;</span> otra vez
+ Empujar <span class="hljs-symbol">&lt;Enter&gt;</span> otra vez
+ Tus intervale<span class="hljs-variable">s:</span> [<span class="hljs-number">0.67185378074646</span>, <span class="hljs-number">0.7783703804016113</span>, <span class="hljs-number">0.8117647171020508</span>, <span class="hljs-number">0.7129857540130615</span>, <span class="hljs-number">0.6942079067230225</span>, <span class="hljs-number">0.6790716648101807</span>,  <span class="hljs-number">0.6637749671936035</span>, <span class="hljs-number">0.7210545539855957</span>, <span class="hljs-number">0.7009344100952148</span>, <span class="hljs-number">0.7096066474914551</span>]
+ El mas corto era  <span class="hljs-number">0.6637749671936035</span>
+ El mas largo era  <span class="hljs-number">0.8117647171020508</span></pre><p> Break into steps. Step 1, append the times to a list and print out the list. Step 2. Sort the list, and print out the longest
+and smallest times. Step 3. Find the median time. Step 4 Add all then numbers in the list, and print out the average time.</p>
+</li>
+<li><p>En &quot;orden_3.py&quot;, escriba un programa que calcule el promedio (también conocido como &quot;media aritmética&quot;) 
+de 10 números aleatorios entre 0 y 100. </p>
+</li>
+</ol>
+<ol start="3">
+<li><p>Más bucles anidados. Utilice el archivo &quot;caos3.py&quot;.</p>
+<p> A. Escriba un programa que cree una lista con 100 elementos, cada uno de los cuales es el valor promedio de 5 números aleatorios entre 0 y 100. Imprime la lista.</p>
+<p> B. Extienda el programa para calcular y mostrar el promedio de estos 100 elementos. El valor debe ser algo
+  cerca de 50.</p>
+<p> C. Extienda el programa para imprimir el más grande y el más pequeño de estos 100 elementos. ¿Qué tan lejos están de
+  el valor que esperas?</p>
+<p> D. Debido a que tenemos una lista de 100 números, el &quot;quinto percentil&quot; de la lista es el quinto valor más grande,
+  y el &quot;percentil 95&quot; es el valor 95 más grande. Amplíe su programa para imprimir los días 5, 33,
+  percentil 67 y 95.</p>
+<p> E. Cambie el programa para promediar 20 números aleatorios en cada paso, en lugar de 5. ¿Alguno de los valores
+  por encima de cambiar significativamente? Pruébalo y descúbrelo.</p>
+</li>
+</ol>
+<hr>
+<blockquote>
+<p><img src="https://github.com/johncroth/pythonEd2024/assets/122372203/4c3087fe-2654-40f6-b1d5-48882650497d" />
+<img src="https://github.com/johncroth/pythonEd2024/assets/122372203/20d36008-14b9-44c1-b3f8-620a72c24bc0" /></p>
+</blockquote>
+<blockquote>
+<p>La clasificación es un problema fundamental en informática, ¡incluso más antiguo que las computadoras! Máquinas como esta clasificadora de tarjetas perforadas son 50 años anteriores a las computadoras digitales. Los valores se codifican en tarjetas practicando agujeros en las posiciones numeradas y la máquina puede clasificarlos mecánicamente.</p>
+</blockquote>
+<p class="page" id="Si"></p><h1>Si</h1>
+<p>Programs need to alter their behavior based on other conditions: user actions,
+time of day, Internet availability, etc. In Python, at the most basic level, we use
+with the construction <code>if...else:</code> (&quot;if...or else:&quot;). Save and run the first example below in
+<code>si_a.py</code>. Try it with multiple passwords, including &quot;python&quot;.</p>
+<pre class="hljs">entrada = <span class="hljs-built_in">input</span>(<span class="hljs-string">&quot;Introduce la contraseña: &quot;</span>)
+<span class="hljs-keyword">if</span> entrada == <span class="hljs-string">&quot;python&quot;</span>:
+   <span class="hljs-built_in">print</span>( <span class="hljs-string">&quot;Correcto, continua.&quot;</span>)
+<span class="hljs-keyword">else</span>:
+   <span class="hljs-built_in">print</span>( entrada, <span class="hljs-string">&quot;is incorrecto, chau.&quot;</span> )</pre><p>(La traducción del inglés al español de &quot;if...else&quot; sería &quot;si... o si no&quot;).
+Lo que se ve en el código es el doble signo igual <code>==</code>. El programa busca el valor almacenado.
+en la variable <code>entrada</code> y pregunta si tiene el valor <code>python</code>; si es así, el
+bloque de código después de ejecutar &quot;if&quot;; de lo contrario, se ejecuta el bloque debajo de &quot;else&quot;.</p>
+<p>El doble signo igual <code>==</code> hace una comparación; no tiene nada en común con el signo igual único <code>=</code>
+hemos estado usando para dar valores a las variables. Bueno, nada excepto el hecho de que parecen
+muy similar; Este es un error común, así que ten cuidado.</p>
+<h2 id="c-mo-comparar-n-meros">Cómo comparar números</h2>
+<p>Guarde lo siguiente en <code>si_b.py</code> y ejecútelo varias veces.</p>
+<pre class="hljs">pequenos = <span class="hljs-number">0</span>
+<span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(<span class="hljs-number">0</span>,<span class="hljs-number">1000</span>):
+    x = random()
+    <span class="hljs-keyword">if</span> x &lt; <span class="hljs-number">.5</span>:
+        pequenos = pequenos + <span class="hljs-number">1</span>
+<span class="hljs-built_in">print</span>( total_small, <span class="hljs-string">&quot;de 1000 estaba menos que .5&quot;</span>)</pre><p>Recuerde, <code>random()</code> devuelve un número entre 0 y 1. Comprobamos si este número es menor que <code>.5</code> y
+si es así, agregamos uno al valor de <code>pequenos</code>. Esperamos aproximadamente, pero no exactamente, la mitad de los resultados aleatorios.
+los números serán menores que .5.</p>
+<p>Puede usar <code>&lt;</code> y <code>&gt;</code> para &quot;menor que&quot; y &quot;mayor que&quot;, así como <code>&lt;=</code> y <code>&gt;=</code> para &quot;menor o igual que&quot; y &quot;mayor o igual que&quot;. 
+También puedes usar <code>==</code>, aunque eso tiene más sentido. para números enteros. También tenga en cuenta que <code>!=</code> significa 
+&quot;no iguales&quot;.</p>
+<h1 id="ejercicios">Ejercicios</h1>
+<ol>
+<li><p>Guarde en <code>si_1.py</code>, ejecute y corrija los errores</p>
+<pre class="hljs">contraseña == <span class="hljs-string">&quot;foo&quot;</span>
+entrada = <span class="hljs-built_in">input</span>(<span class="hljs-string">&quot;Introduce la contraseña: &quot;</span>)
+<span class="hljs-keyword">if</span> entrada = contraseña:
+<span class="hljs-built_in">print</span>( <span class="hljs-string">&quot;Correcto, continua.&quot;</span>)
+<span class="hljs-keyword">else</span>
+<span class="hljs-built_in">print</span>( entrada, <span class="hljs-string">&quot;is incorrecto, chau.&quot;</span> )</pre></li>
+<li><p>Escriba un programa en el archivo <code>si_2.py</code> que cuente el número de veces entre 1000 que <code>randint(0,10)</code> devuelve <code>2</code></p>
+</li>
+<li><p>Escriba un programa en el archivo <code>si_3.py</code> que cuente el número de veces en 1000000 que <code>randint(0,10) es menor o igual a</code>3`</p>
+</li>
+<li><p>A. Guarde el siguiente programa en <code>si_4.py</code>, ejecútelo y corrija los errores uno por uno.
+ <code>`</code>python
+ nombres = [ &quot;Alicia&quot;, &quot;Benjamin&quot;, &quot;Carlos&quot;, &quot;Diana&quot;, &quot;Elvis&quot; ]
+ edads = 17, 23, 16, 24, 18
+ ciudades = [ &quot;Calca&quot;, &quot;Lamay&quot;, Lamay, &quot;Calca&quot;, &quot;Calca&quot; ]</p>
+</li>
+</ol>
+<pre class="hljs">num_personas = <span class="hljs-built_in">len</span>(nombres)
+<span class="hljs-keyword">for</span> i in <span class="hljs-keyword">range</span>(<span class="hljs-number">0</span>, num_personas):
+    <span class="hljs-keyword">if</span> edads[i] &gt;= <span class="hljs-number">18</span>:
+        <span class="hljs-built_in">print</span>(nombres[i], <span class="hljs-string">&quot;puede votar en&quot;</span>, ciudades[i])
+<span class="hljs-string">``</span><span class="hljs-string">`
+
+B. El programa contiene los nombres de 5 personas, y sus respectivas edades, ciudades e impresiones.</span></pre><p>excluir a aquellos que tienen edad suficiente para votar. Añade dos personas al programa, que vivan en Calca, y dale
+les envejecen para que uno pueda votar y el otro no.</p>
+<pre class="hljs">C. Cambie el programa para generar solo los nombres <span class="hljs-keyword">de</span> las personas <span class="hljs-keyword">en</span> <span class="hljs-keyword">la</span> lista <span class="hljs-keyword">que</span> pueden votar y tambien viven <span class="hljs-keyword">en</span> Calca.</pre>
+        </div> <!-- /div.col-md-9 -->
+      </div> <!-- /div.row -->
+    </div> <!-- /div.container -->
+  </body>
+  <script>
+    $('body').scrollspy({ target: '#scroll-spy', offset: 40 })
+  </script>
+</html>
